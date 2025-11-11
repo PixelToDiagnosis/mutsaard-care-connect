@@ -22,7 +22,7 @@ const translations = {
     // Home
     'home.title': 'Welkom bij Cabinet Mutsaard',
     'home.subtitle': 'Uw huisartsenpraktijk in Laeken, Brussel',
-    'home.description': 'We bieden toegankelijke, hoogwaardige en continue eerstelijnszorg voor iedereen in onze gemeenschap, met focus op preventie, chronische ziektebeheer en persoonlijke patiëntrelaties.',
+    'home.description': 'Welkom bij Cabinet Mutsaard, uw huisartsenpraktijk in het hart van Laken. Ons toegewijd team van artsen biedt uitgebreide en gepersonaliseerde gezondheidszorg voor het hele gezin. Wij geloven in een holistische benadering van gezondheid, waarbij wij de tijd nemen om naar uw zorgen te luisteren en zorgplannen te creëren die zijn aangepast aan uw unieke situatie.',
     'home.book': 'Maak een afspraak',
     'home.aesthetic.title': 'Esthetische geneeskunde nu beschikbaar',
     'home.aesthetic.banner': 'Ter info: sinds kort biedt het Kabinet Mutsaard ook esthetische geneeskunde aan, uitgevoerd door Dr Marie-Eve Bousmar.',
@@ -119,7 +119,7 @@ const translations = {
     // Home
     'home.title': 'Bienvenue au Cabinet Mutsaard',
     'home.subtitle': 'Votre cabinet de médecine générale à Laeken, Bruxelles',
-    'home.description': 'Nous offrons des soins de santé primaires accessibles, de haute qualité et continus pour tous dans notre communauté, en mettant l\'accent sur la prévention, la gestion des maladies chroniques et les relations personnelles avec les patients.',
+    'home.description': 'Bienvenue au Cabinet Mutsaard, votre cabinet de médecine générale situé au cœur de Laeken. Notre équipe de praticiens dévoués offre des soins de santé complets et personnalisés pour toute la famille. Nous croyons en une approche globale de la santé, en prenant le temps d\'écouter vos préoccupations et de créer des plans de soins adaptés à votre situation unique.',
     'home.book': 'Prendre rendez-vous',
     'home.aesthetic.title': 'Médecine esthétique maintenant disponible',
     'home.aesthetic.banner': 'À titre informatif : le Cabinet Mutsaard propose désormais des consultations de médecine esthétique assurées par le Dr Marie-Eve Bousmar.',
@@ -216,7 +216,7 @@ const translations = {
     // Home
     'home.title': 'Welcome to Mutsaard Medical Practice',
     'home.subtitle': 'Your family practice in Laeken, Brussels',
-    'home.description': 'We provide accessible, high-quality and continuous primary care for everyone in our community, focusing on prevention, chronic-disease management and personal patient relationships.',
+    'home.description': 'Welcome to Cabinet Mutsaard, your general practice located in the heart of Laeken. Our team of dedicated practitioners offers comprehensive and personalized health care for the whole family. We believe in a holistic approach to health, taking the time to listen to your concerns and create care plans tailored to your unique situation.',
     'home.book': 'Book an appointment',
     'home.aesthetic.title': 'Aesthetic medicine now available',
     'home.aesthetic.banner': 'For your information: Mutsaard Medical Practice now also offers aesthetic medicine consultations by Dr Marie-Eve Bousmar.',
