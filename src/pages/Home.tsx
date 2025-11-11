@@ -146,40 +146,31 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Preview with Image */}
+      {/* About Preview */}
       <section className="py-20 bg-medical-beige">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
-                <h2 className="text-3xl md:text-4xl font-bold">{t('about.title')}</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {t('about.mission.text')}
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold">{t('about.title')}</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                {t('about.mission.text')}
+              </p>
+              <div className="space-y-3">
+                <p className="flex items-center gap-2 text-foreground/90">
+                  <span className="h-2 w-2 rounded-full bg-primary" />
+                  {t('about.languages.list')}
                 </p>
-                <div className="space-y-3">
-                  <p className="flex items-center gap-2 text-foreground/90">
-                    <span className="h-2 w-2 rounded-full bg-primary" />
-                    {t('about.languages.list')}
-                  </p>
-                  <p className="flex items-center gap-2 text-foreground/90">
-                    <span className="h-2 w-2 rounded-full bg-primary" />
-                    {t('about.locations')}
-                  </p>
-                </div>
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="/about">
-                    {t('home.learn.more')}
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Link>
-                </Button>
+                <p className="flex items-center gap-2 text-foreground/90">
+                  <span className="h-2 w-2 rounded-full bg-primary" />
+                  {t('about.locations')}
+                </p>
               </div>
-              <div className="relative">
-                <img 
-                  src={consultationImage} 
-                  alt="Medical consultation"
-                  className="rounded-lg shadow-xl w-full"
-                />
-              </div>
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/about">
+                  {t('home.learn.more')}
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
