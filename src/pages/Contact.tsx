@@ -82,42 +82,46 @@ const Contact = () => {
             </Card>
           </div>
 
-          {/* Map */}
-          <Card className="relative">
-            <CardHeader>
-              <CardTitle>{t('contact.map.title')}</CardTitle>
-            </CardHeader>
-            <CardContent className="p-0">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5033.540!2d4.3502!3d50.8810!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3f6a8b0f7f7%3A0x9c3e6f8d5e4a2b1c!2s59%20Avenue%20Mutsaard%2C%201020%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1234567890123!5m2!1sfr!2sbe"
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Cabinet Mutsaard - Nos adresses"
-              />
-              {/* Legend overlay */}
-              <div className="absolute bottom-4 left-4 bg-background/95 backdrop-blur rounded-lg p-4 shadow-lg space-y-2 text-sm max-w-xs">
-                <p className="font-semibold text-foreground mb-2">{t('contact.map.title')}</p>
-                <div className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-medium text-foreground">59 Avenue Mutsaard</p>
-                    <p className="text-xs text-muted-foreground">1020 Laeken</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-medium text-foreground">2 Avenue du Forum</p>
-                    <p className="text-xs text-muted-foreground">1020 Laeken</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          {/* Maps */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">{t('about.location1.title')}</CardTitle>
+                <p className="text-sm text-muted-foreground">59 Avenue Mutsaard, 1020 Laeken</p>
+              </CardHeader>
+              <CardContent className="p-0">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.7!2d4.3502!3d50.8810!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3f6a8b0f7f7%3A0x9c3e6f8d5e4a2b1c!2s59%20Avenue%20Mutsaard%2C%201020%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1"
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Cabinet Mutsaard - 59 Avenue Mutsaard"
+                />
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">{t('about.location2.title')}</CardTitle>
+                <p className="text-sm text-muted-foreground">2 Avenue du Forum, 1020 Laeken</p>
+              </CardHeader>
+              <CardContent className="p-0">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.6!2d4.3485!3d50.8825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3f5e7d8a9b1%3A0x8d7c6e5f4a3b2c1d!2s2%20Avenue%20du%20Forum%2C%201020%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1"
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Cabinet Mutsaard - 2 Avenue du Forum"
+                />
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
