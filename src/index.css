@@ -43,6 +43,9 @@ All colors MUST be HSL.
     --medical-beige: 35 40% 95%;
     --medical-beige-dark: 35 30% 85%;
     --medical-warm: 30 50% 92%;
+    --medical-rose: 350 60% 95%;
+    --medical-cream: 40 35% 97%;
+    --medical-rose-accent: 350 45% 88%;
     
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -88,6 +91,9 @@ All colors MUST be HSL.
     --medical-beige: 30 15% 20%;
     --medical-beige-dark: 30 10% 30%;
     --medical-warm: 30 20% 18%;
+    --medical-rose: 350 25% 20%;
+    --medical-cream: 40 15% 18%;
+    --medical-rose-accent: 350 20% 25%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

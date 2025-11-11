@@ -1,6 +1,8 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { MapPin, Languages, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const { t } = useLanguage();
@@ -67,16 +69,10 @@ const About = () => {
                   {t('home.book')}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-2">
-                <p className="text-sm text-muted-foreground">Via Medispring</p>
-                <a 
-                  href="https://medispring.be" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline font-medium"
-                >
-                  medispring.be
-                </a>
+              <CardContent>
+                <Link to="/appointments">
+                  <Button className="w-full">{t('home.book')}</Button>
+                </Link>
               </CardContent>
             </Card>
           </div>

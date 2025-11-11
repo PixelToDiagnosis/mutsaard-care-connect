@@ -56,6 +56,9 @@ export default {
           beige: "hsl(var(--medical-beige))",
           "beige-dark": "hsl(var(--medical-beige-dark))",
           warm: "hsl(var(--medical-warm))",
+          rose: "hsl(var(--medical-rose))",
+          cream: "hsl(var(--medical-cream))",
+          "rose-accent": "hsl(var(--medical-rose-accent))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

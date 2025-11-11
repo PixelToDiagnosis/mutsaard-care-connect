@@ -49,15 +49,15 @@ const translations = {
     'services.title': 'Onze diensten',
     'services.intro': 'Wij bieden een breed scala aan medische diensten voor uw hele gezin.',
     'services.gp': 'Huisartsengeneeskunde',
-    'services.gp.desc': 'Volledige medische zorg voor alle leeftijden',
-    'services.chronic': 'Chronische ziekten',
-    'services.chronic.desc': 'Beheer van chronische aandoeningen',
+    'services.gp.desc': 'Consultaties voor het hele gezin: acute en chronische ziekten, gezondheidsopvolging, preventie en screening',
+    'services.chronic': 'Opvolging van chronische ziekten',
+    'services.chronic.desc': 'Gepersonaliseerde zorg voor diabetes, hypertensie, astma, COPD en andere chronische aandoeningen',
     'services.vaccinations': 'Vaccinaties',
-    'services.vaccinations.desc': 'Alle preventieve vaccinaties',
-    'services.acute': 'Acute zorg',
-    'services.acute.desc': 'Voor kleine urgente problemen (geen spoedgevallen)',
+    'services.vaccinations.desc': 'Vaccinaties voor kinderen, volwassenen en reizigers: griep, tetanus, hepatitis en COVID-19 vaccinatie',
+    'services.acute': 'Kleine urgente zorg',
+    'services.acute.desc': 'Zorg voor kleine urgente problemen: wonden, infecties, koorts, pijn (geen echte spoedgevallen)',
     'services.aesthetic': 'Esthetische geneeskunde',
-    'services.aesthetic.desc': 'Natuurlijke resultaten met medische precisie',
+    'services.aesthetic.desc': 'Esthetische consultaties door Dr Marie-Eve Bousmar: Botox, fillers en collageenstimulatie',
     
     // Aesthetic
     'aesthetic.title': 'Esthetische geneeskunde',
@@ -146,15 +146,15 @@ const translations = {
     'services.title': 'Nos services',
     'services.intro': 'Nous offrons une large gamme de services médicaux pour toute votre famille.',
     'services.gp': 'Médecine générale',
-    'services.gp.desc': 'Soins médicaux complets pour tous les âges',
-    'services.chronic': 'Maladies chroniques',
-    'services.chronic.desc': 'Gestion des affections chroniques',
+    'services.gp.desc': 'Consultations pour toute la famille : maladies aiguës et chroniques, suivi de santé, prévention et dépistage',
+    'services.chronic': 'Suivi des maladies chroniques',
+    'services.chronic.desc': 'Prise en charge personnalisée du diabète, hypertension, asthme, BPCO et autres affections chroniques',
     'services.vaccinations': 'Vaccinations',
-    'services.vaccinations.desc': 'Toutes les vaccinations préventives',
-    'services.acute': 'Soins aigus',
-    'services.acute.desc': 'Pour les petits problèmes urgents (pas d\'urgences)',
+    'services.vaccinations.desc': 'Vaccinations enfants, adultes et voyageurs : grippe, tétanos, hépatites, et vaccination COVID-19',
+    'services.acute': 'Petites urgences',
+    'services.acute.desc': 'Soins pour problèmes urgents mineurs : plaies, infections, fièvre, douleurs (pas de vraies urgences)',
     'services.aesthetic': 'Médecine esthétique',
-    'services.aesthetic.desc': 'Résultats naturels avec précision médicale',
+    'services.aesthetic.desc': 'Consultations esthétiques par Dr Marie-Eve Bousmar : Botox, fillers et stimulation du collagène',
     
     // Aesthetic
     'aesthetic.title': 'Médecine esthétique',
@@ -243,15 +243,15 @@ const translations = {
     'services.title': 'Our Services',
     'services.intro': 'We offer a wide range of medical services for your entire family.',
     'services.gp': 'General Practice',
-    'services.gp.desc': 'Complete medical care for all ages',
+    'services.gp.desc': 'Consultations for the whole family: acute and chronic illnesses, health monitoring, prevention and screening',
     'services.chronic': 'Chronic Disease Management',
-    'services.chronic.desc': 'Management of chronic conditions',
+    'services.chronic.desc': 'Personalized care for diabetes, hypertension, asthma, COPD and other chronic conditions',
     'services.vaccinations': 'Vaccinations',
-    'services.vaccinations.desc': 'All preventive vaccinations',
-    'services.acute': 'Acute Care',
-    'services.acute.desc': 'For minor urgent issues (no emergencies)',
+    'services.vaccinations.desc': 'Vaccinations for children, adults and travelers: flu, tetanus, hepatitis and COVID-19 vaccination',
+    'services.acute': 'Minor Urgent Care',
+    'services.acute.desc': 'Care for minor urgent issues: wounds, infections, fever, pain (not true emergencies)',
     'services.aesthetic': 'Aesthetic Medicine',
-    'services.aesthetic.desc': 'Natural results with medical precision',
+    'services.aesthetic.desc': 'Aesthetic consultations by Dr Marie-Eve Bousmar: Botox, fillers and collagen stimulation',
     
     // Aesthetic
     'aesthetic.title': 'Aesthetic Medicine',
@@ -307,7 +307,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>(() => {
     const saved = localStorage.getItem('language');
-    return (saved as Language) || 'nl';
+    return (saved as Language) || 'fr';
   });
 
   useEffect(() => {

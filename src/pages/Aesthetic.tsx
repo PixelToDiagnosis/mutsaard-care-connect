@@ -44,13 +44,13 @@ const Aesthetic = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-medical-cream via-background to-medical-rose">
       {/* Hero Section with Image */}
       <section className="relative overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="bg-gradient-to-br from-medical-warm to-medical-beige py-16 lg:py-24 px-4">
+          <div className="bg-gradient-to-br from-medical-rose via-medical-cream to-medical-beige py-16 lg:py-24 px-4">
             <div className="container mx-auto max-w-xl space-y-6">
-              <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-background shadow-md mb-4">
+              <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-background/90 shadow-lg mb-4">
                 <Sparkles className="h-8 w-8 text-primary" />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-foreground">
@@ -82,9 +82,9 @@ const Aesthetic = () => {
             
             <div className="space-y-6">
               {treatments.map((treatment, index) => (
-                <Card key={index} className="border-border">
+                <Card key={index} className="border-none bg-card/60 backdrop-blur-sm shadow-md hover:shadow-lg transition-all">
                   <CardHeader>
-                    <CardTitle className="text-xl">{treatment.title}</CardTitle>
+                    <CardTitle className="text-xl text-foreground">{treatment.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground leading-relaxed">{treatment.description}</p>
@@ -97,14 +97,14 @@ const Aesthetic = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-muted">
+      <section className="py-16 bg-medical-rose-accent/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">{t('aesthetic.faq')}</h2>
             
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-background rounded-lg px-6 border-border">
+                <AccordionItem key={index} value={`item-${index}`} className="bg-background/80 backdrop-blur-sm rounded-lg px-6 border-none shadow-sm">
                   <AccordionTrigger className="text-left hover:no-underline">
                     <span className="font-semibold">{faq.question}</span>
                   </AccordionTrigger>
@@ -119,10 +119,10 @@ const Aesthetic = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-medical-warm">
+      <section className="py-16 bg-gradient-to-b from-medical-cream to-medical-rose">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <Card className="border-none shadow-lg bg-card">
+            <Card className="border-none shadow-xl bg-card/80 backdrop-blur-sm">
               <CardContent className="p-8 md:p-12">
                 <div className="text-center space-y-6">
                   <h2 className="text-3xl font-bold">{t('home.book')}</h2>

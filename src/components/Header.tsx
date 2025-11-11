@@ -14,7 +14,6 @@ const Header = () => {
     { path: '/about', label: t('nav.about') },
     { path: '/doctors', label: t('nav.doctors') },
     { path: '/appointments', label: t('nav.appointments') },
-    { path: '/aesthetic', label: t('nav.aesthetic') },
     { path: '/contact', label: t('nav.contact') },
   ];
 
@@ -46,21 +45,21 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2 text-sm">
             <button
-              onClick={() => setLanguage('nl')}
-              className={`font-medium transition-colors ${
-                language === 'nl' ? 'text-primary' : 'text-foreground/60 hover:text-primary'
-              }`}
-            >
-              NL
-            </button>
-            <span className="text-foreground/30">|</span>
-            <button
               onClick={() => setLanguage('fr')}
               className={`font-medium transition-colors ${
                 language === 'fr' ? 'text-primary' : 'text-foreground/60 hover:text-primary'
               }`}
             >
               FR
+            </button>
+            <span className="text-foreground/30">|</span>
+            <button
+              onClick={() => setLanguage('nl')}
+              className={`font-medium transition-colors ${
+                language === 'nl' ? 'text-primary' : 'text-foreground/60 hover:text-primary'
+              }`}
+            >
+              NL
             </button>
             <span className="text-foreground/30">|</span>
             <button

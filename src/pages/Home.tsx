@@ -14,21 +14,31 @@ const Home = () => {
       icon: Stethoscope,
       title: t('services.gp'),
       description: t('services.gp.desc'),
+      link: null,
     },
     {
       icon: Activity,
       title: t('services.chronic'),
       description: t('services.chronic.desc'),
+      link: null,
     },
     {
       icon: Syringe,
       title: t('services.vaccinations'),
       description: t('services.vaccinations.desc'),
+      link: null,
     },
     {
       icon: Clock,
       title: t('services.acute'),
       description: t('services.acute.desc'),
+      link: null,
+    },
+    {
+      icon: Sparkles,
+      title: t('services.aesthetic'),
+      description: t('services.aesthetic.desc'),
+      link: '/aesthetic',
     },
   ];
 
@@ -108,17 +118,29 @@ const Home = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {services.map((service, index) => (
-                <Card key={index} className="hover:shadow-lg transition-all">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="h-12 w-12 rounded-lg bg-medical-blue-light flex items-center justify-center">
-                      <service.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="font-semibold text-xl">{service.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
+              {services.map((service, index) => {
+                const content = (
+                  <Card className={`hover:shadow-lg transition-all h-full ${service.link ? 'cursor-pointer' : ''}`}>
+                    <CardContent className="p-6 space-y-4">
+                      <div className="h-12 w-12 rounded-lg bg-medical-blue-light flex items-center justify-center">
+                        <service.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="font-semibold text-xl">{service.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                    </CardContent>
+                  </Card>
+                );
+                
+                return service.link ? (
+                  <Link key={index} to={service.link}>
+                    {content}
+                  </Link>
+                ) : (
+                  <div key={index}>
+                    {content}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
