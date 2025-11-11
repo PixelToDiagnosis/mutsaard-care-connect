@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Stethoscope, Activity, Syringe, Clock, Sparkles, ArrowRight, Phone } from 'lucide-react';
 import heroImage from '@/assets/practice-hero.jpg';
-import consultationImage from '@/assets/consultation.jpg';
+import consultationImage from '@/assets/apple-tree.jpg';
 
 const Home = () => {
   const { t } = useLanguage();
