@@ -66,13 +66,13 @@ const Aesthetic = () => {
                 {t('aesthetic.welcome')}
               </h2>
               <p className="text-base text-foreground/70 italic">
-                Soigner, écouter, révéler la beauté naturelle de chacun : une approche globale du bien-être, entre santé et esthétique.
+                {t('aesthetic.slogan')}
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed whitespace-pre-line">
                 {t('aesthetic.intro')}
               </p>
               <p className="text-base text-muted-foreground font-medium pt-4">
-                Adresse du cabinet : 2 Avenue du Forum, 1020 Laeken
+                {t('aesthetic.office.address')}
               </p>
             </div>
           </div>
@@ -91,7 +91,7 @@ const Aesthetic = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto space-y-16">
-            <h2 className="text-3xl font-bold text-center text-foreground">Traitements proposés</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground">{t('aesthetic.treatments.title')}</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {treatments.map((treatment, index) => (
