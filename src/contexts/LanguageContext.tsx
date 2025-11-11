@@ -66,7 +66,7 @@ const translations = {
     
     // Aesthetic
     'aesthetic.title': 'Esthetische geneeskunde',
-    'aesthetic.intro': 'Dr Marie-Eve Bousmar biedt consultaties in esthetische geneeskunde aan bij Cabinet Mutsaard (Laeken). Haar aanpak combineert medische precisie met natuurlijke resultaten, binnen een vertrouwde huisartsomgeving.',
+    'aesthetic.intro': 'Afgestudeerd in de geneeskunde aan de Katholieke Universiteit Leuven in 2015, heb ik altijd gestreefd naar een menselijke, zorgzame en aandachtige geneeskunde. Door de jaren heen heb ik ervoor gekozen om huisartsgeneeskunde en esthetische geneeskunde te combineren, twee complementaire benaderingen die een gemeenschappelijk doel delen: het algehele welzijn van de patiënt.\n\nHuisartsgeneeskunde stelt mij in staat om iedereen dagelijks te begeleiden, te voorkomen, te luisteren en te verzorgen. Esthetische geneeskunde biedt daarentegen de mogelijkheid om in harmonie met jezelf te voelen, om vertrouwen en uitstraling terug te vinden, met respect voor ieders natuurlijke schoonheid.\n\nDoor deze dubbele benadering wil ik een volledige zorg bieden, waar gezondheid, vertrouwen en evenwicht samenkomen. Elke patiënt is uniek, en met zachtheid en aandacht bied ik gepersonaliseerde zorg aan, ten dienste van oprechte schoonheid en duurzaam welzijn.',
     'aesthetic.treatments': 'Behandelingen',
     'aesthetic.botox': 'Botulinetoxine (Botox)',
     'aesthetic.botox.desc': 'Verzacht expressierimpels (voorhoofd, fronslijnen, kraaienpootjes) met behoud van natuurlijke gezichtsuitdrukking.',
@@ -168,7 +168,7 @@ const translations = {
     
     // Aesthetic
     'aesthetic.title': 'Médecine esthétique',
-    'aesthetic.intro': 'Le Dr Marie-Eve Bousmar propose des consultations de médecine esthétique au Cabinet Mutsaard (Laeken). Son approche allie précision médicale et résultats naturels, dans un environnement médical de confiance.',
+    'aesthetic.intro': 'Diplômée en médecine à l\'Université catholique de Louvain en 2015, j\'ai toujours eu à cœur d\'exercer une médecine humaine, bienveillante et à l\'écoute. Au fil des années, j\'ai choisi d\'allier la médecine générale et la médecine esthétique, deux approches complémentaires qui partagent un même objectif : le bien-être global du patient.\n\nLa médecine générale me permet d\'accompagner chacun au quotidien, de prévenir, d\'écouter et de soigner. La médecine esthétique, quant à elle, offre la possibilité de se sentir en harmonie avec soi-même, de retrouver confiance et éclat, tout en respectant la beauté naturelle de chacun.\n\nÀ travers cette double approche, je souhaite offrir une prise en charge complète, où la santé, la confiance et l\'équilibre se rencontrent. Chaque patient est unique, et c\'est avec douceur et attention que je propose des soins personnalisés, au service d\'une beauté sincère et d\'un bien-être durable.',
     'aesthetic.treatments': 'Traitements',
     'aesthetic.botox': 'Toxine botulique (Botox)',
     'aesthetic.botox.desc': 'Atténue les rides d\'expression (front, rides du lion, pattes d\'oie) tout en préservant l\'expression naturelle du visage.',
@@ -270,7 +270,7 @@ const translations = {
     
     // Aesthetic
     'aesthetic.title': 'Aesthetic Medicine',
-    'aesthetic.intro': 'Dr Marie-Eve Bousmar offers aesthetic medicine consultations at Mutsaard Medical Practice (Laeken). Her approach combines medical precision and natural results, within a trusted GP environment.',
+    'aesthetic.intro': 'Graduated in medicine from the Catholic University of Louvain in 2015, I have always been committed to practicing humane, caring and attentive medicine. Over the years, I chose to combine general practice and aesthetic medicine, two complementary approaches that share the same objective: the overall well-being of the patient.\n\nGeneral practice allows me to support everyone on a daily basis, to prevent, listen and care. Aesthetic medicine, on the other hand, offers the possibility of feeling in harmony with oneself, of regaining confidence and radiance, while respecting everyone\'s natural beauty.\n\nThrough this dual approach, I wish to offer comprehensive care, where health, confidence and balance meet. Each patient is unique, and it is with gentleness and attention that I offer personalized care, in the service of sincere beauty and lasting well-being.',
     'aesthetic.treatments': 'Treatments',
     'aesthetic.botox': 'Botulinum toxin (Botox)',
     'aesthetic.botox.desc': 'Softens expression lines (forehead, frown lines, crow\'s feet) while preserving natural facial expression.',
