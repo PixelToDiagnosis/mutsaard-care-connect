@@ -6,10 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Index from "./pages/Index";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Doctors from "./pages/Doctors";
-import Services from "./pages/Services";
+import Appointments from "./pages/Appointments";
 import Aesthetic from "./pages/Aesthetic";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -27,10 +27,10 @@ const App = () => (
             <Header />
             <main className="flex-grow">
               <Routes>
-                <Route path="/" element={<Index />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/doctors" element={<Doctors />} />
-                <Route path="/services" element={<Services />} />
+                <Route path="/appointments" element={<Appointments />} />
                 <Route path="/aesthetic" element={<Aesthetic />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />

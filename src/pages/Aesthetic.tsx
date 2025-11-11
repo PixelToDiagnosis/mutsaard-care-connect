@@ -2,7 +2,9 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
-import { Sparkles, Phone } from 'lucide-react';
+import { Sparkles, Phone, Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import aestheticRoomImage from '@/assets/aesthetic-room.jpg';
 
 const Aesthetic = () => {
   const { t } = useLanguage();
@@ -43,19 +45,31 @@ const Aesthetic = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-medical-beige to-background py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-background shadow-md mb-4">
-              <Sparkles className="h-8 w-8 text-primary" />
+      {/* Hero Section with Image */}
+      <section className="relative overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="bg-gradient-to-br from-medical-warm to-medical-beige py-16 lg:py-24 px-4">
+            <div className="container mx-auto max-w-xl space-y-6">
+              <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-background shadow-md mb-4">
+                <Sparkles className="h-8 w-8 text-primary" />
+              </div>
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+                {t('aesthetic.title')}
+              </h1>
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                {t('aesthetic.intro')}
+              </p>
+              <p className="text-base text-muted-foreground">
+                Dr Marie-Eve Bousmar - 2 Avenue du Forum, 1020 Laeken
+              </p>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-              {t('aesthetic.title')}
-            </h1>
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              {t('aesthetic.intro')}
-            </p>
+          </div>
+          <div className="hidden lg:block relative h-[500px]">
+            <img 
+              src={aestheticRoomImage} 
+              alt="Aesthetic medicine consultation room"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -105,27 +119,36 @@ const Aesthetic = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-medical-blue-light">
+      <section className="py-16 bg-gradient-to-b from-background to-medical-warm">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl font-bold">{t('home.book')}</h2>
-            <p className="text-lg text-muted-foreground">
-              Dr Marie-Eve Bousmar - Cabinet Mutsaard
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild className="gap-2">
-                <a href="https://medispring.be" target="_blank" rel="noopener noreferrer">
-                  <Phone className="h-4 w-4" />
-                  Medispring.be
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="tel:+3222684040">
-                  <Phone className="h-4 w-4" />
-                  +32 2 268 40 40
-                </a>
-              </Button>
-            </div>
+          <div className="max-w-3xl mx-auto">
+            <Card className="border-none shadow-lg bg-card">
+              <CardContent className="p-8 md:p-12">
+                <div className="text-center space-y-6">
+                  <h2 className="text-3xl font-bold">{t('home.book')}</h2>
+                  <p className="text-lg text-muted-foreground">
+                    Dr Marie-Eve Bousmar
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    2 Avenue du Forum, 1020 Laeken
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                    <Button size="lg" asChild>
+                      <Link to="/appointments">
+                        <Calendar className="h-4 w-4 mr-2" />
+                        {t('appointments.title')}
+                      </Link>
+                    </Button>
+                    <Button size="lg" variant="outline" asChild>
+                      <a href="tel:+3222684040">
+                        <Phone className="h-4 w-4 mr-2" />
+                        +32 2 268 40 40
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

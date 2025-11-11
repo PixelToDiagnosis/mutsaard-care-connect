@@ -13,7 +13,7 @@ const Header = () => {
     { path: '/', label: t('nav.home') },
     { path: '/about', label: t('nav.about') },
     { path: '/doctors', label: t('nav.doctors') },
-    { path: '/services', label: t('nav.services') },
+    { path: '/appointments', label: t('nav.appointments') },
     { path: '/aesthetic', label: t('nav.aesthetic') },
     { path: '/contact', label: t('nav.contact') },
   ];

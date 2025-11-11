@@ -17,14 +17,18 @@ const translations = {
     'nav.services': 'Onze diensten',
     'nav.aesthetic': 'Esthetische geneeskunde',
     'nav.contact': 'Contact',
+    'nav.appointments': 'Afspraak maken',
     
     // Home
     'home.title': 'Welkom bij Cabinet Mutsaard',
     'home.subtitle': 'Uw huisartsenpraktijk in Laeken, Brussel',
     'home.description': 'We bieden toegankelijke, hoogwaardige en continue eerstelijnszorg voor iedereen in onze gemeenschap, met focus op preventie, chronische ziektebeheer en persoonlijke patiëntrelaties.',
     'home.book': 'Maak een afspraak',
+    'home.aesthetic.title': 'Esthetische geneeskunde nu beschikbaar',
     'home.aesthetic.banner': 'Ter info: sinds kort biedt het Kabinet Mutsaard ook esthetische geneeskunde aan, uitgevoerd door Dr Marie-Eve Bousmar.',
     'home.learn.more': 'Meer info',
+    'home.cta.title': 'Klaar om een afspraak te maken?',
+    'home.cta.text': 'Neem contact met ons op via telefoon of boek online een afspraak bij een van onze artsen.',
     
     // About
     'about.title': 'Over Cabinet Mutsaard',
@@ -43,6 +47,7 @@ const translations = {
     
     // Services
     'services.title': 'Onze diensten',
+    'services.intro': 'Wij bieden een breed scala aan medische diensten voor uw hele gezin.',
     'services.gp': 'Huisartsengeneeskunde',
     'services.gp.desc': 'Volledige medische zorg voor alle leeftijden',
     'services.chronic': 'Chronische ziekten',
@@ -81,11 +86,21 @@ const translations = {
     'contact.email': 'E-mail',
     'contact.emergency': 'Spoednummer',
     'contact.gp.oncall': 'Huisartsenwachtpost',
+    'contact.map.title': 'Onze locaties',
     'contact.form.title': 'Stel uw vraag',
     'contact.form.name': 'Naam',
     'contact.form.email': 'E-mail',
     'contact.form.message': 'Bericht',
     'contact.form.send': 'Verstuur',
+    
+    // Appointments
+    'appointments.title': 'Afspraak maken',
+    'appointments.subtitle': 'Kies uw arts en boek een afspraak via telefoon of online.',
+    'appointments.methods': 'Afspraak maken',
+    'appointments.by.phone': 'Via telefoon',
+    'appointments.online': 'Online boeken',
+    'appointments.note.title': 'Let op',
+    'appointments.note.text': 'Niet alle artsen gebruiken online agenda\'s. Voor artsen zonder online boekingsoptie, gelieve telefonisch contact op te nemen.',
     
     // Footer
     'footer.copyright': '© 2025 Cabinet Mutsaard. Alle rechten voorbehouden.',
@@ -99,14 +114,18 @@ const translations = {
     'nav.services': 'Nos services',
     'nav.aesthetic': 'Médecine esthétique',
     'nav.contact': 'Contact',
+    'nav.appointments': 'Prendre rendez-vous',
     
     // Home
     'home.title': 'Bienvenue au Cabinet Mutsaard',
     'home.subtitle': 'Votre cabinet de médecine générale à Laeken, Bruxelles',
     'home.description': 'Nous offrons des soins de santé primaires accessibles, de haute qualité et continus pour tous dans notre communauté, en mettant l\'accent sur la prévention, la gestion des maladies chroniques et les relations personnelles avec les patients.',
     'home.book': 'Prendre rendez-vous',
+    'home.aesthetic.title': 'Médecine esthétique maintenant disponible',
     'home.aesthetic.banner': 'À titre informatif : le Cabinet Mutsaard propose désormais des consultations de médecine esthétique assurées par le Dr Marie-Eve Bousmar.',
     'home.learn.more': 'En savoir plus',
+    'home.cta.title': 'Prêt à prendre rendez-vous ?',
+    'home.cta.text': 'Contactez-nous par téléphone ou réservez en ligne un rendez-vous avec l\'un de nos médecins.',
     
     // About
     'about.title': 'À propos du Cabinet Mutsaard',
@@ -125,6 +144,7 @@ const translations = {
     
     // Services
     'services.title': 'Nos services',
+    'services.intro': 'Nous offrons une large gamme de services médicaux pour toute votre famille.',
     'services.gp': 'Médecine générale',
     'services.gp.desc': 'Soins médicaux complets pour tous les âges',
     'services.chronic': 'Maladies chroniques',
@@ -163,11 +183,21 @@ const translations = {
     'contact.email': 'E-mail',
     'contact.emergency': 'Numéro d\'urgence',
     'contact.gp.oncall': 'Garde médecins généralistes',
+    'contact.map.title': 'Nos adresses',
     'contact.form.title': 'Posez votre question',
     'contact.form.name': 'Nom',
     'contact.form.email': 'E-mail',
     'contact.form.message': 'Message',
     'contact.form.send': 'Envoyer',
+    
+    // Appointments
+    'appointments.title': 'Prendre rendez-vous',
+    'appointments.subtitle': 'Choisissez votre médecin et prenez rendez-vous par téléphone ou en ligne.',
+    'appointments.methods': 'Méthodes de rendez-vous',
+    'appointments.by.phone': 'Par téléphone',
+    'appointments.online': 'Réservation en ligne',
+    'appointments.note.title': 'Note importante',
+    'appointments.note.text': 'Tous les médecins n\'utilisent pas d\'agendas en ligne. Pour les médecins sans option de réservation en ligne, veuillez les contacter par téléphone.',
     
     // Footer
     'footer.copyright': '© 2025 Cabinet Mutsaard. Tous droits réservés.',
@@ -181,14 +211,18 @@ const translations = {
     'nav.services': 'Our Services',
     'nav.aesthetic': 'Aesthetic Medicine',
     'nav.contact': 'Contact',
+    'nav.appointments': 'Book Appointment',
     
     // Home
     'home.title': 'Welcome to Mutsaard Medical Practice',
     'home.subtitle': 'Your family practice in Laeken, Brussels',
     'home.description': 'We provide accessible, high-quality and continuous primary care for everyone in our community, focusing on prevention, chronic-disease management and personal patient relationships.',
     'home.book': 'Book an appointment',
+    'home.aesthetic.title': 'Aesthetic medicine now available',
     'home.aesthetic.banner': 'For your information: Mutsaard Medical Practice now also offers aesthetic medicine consultations by Dr Marie-Eve Bousmar.',
     'home.learn.more': 'Learn more',
+    'home.cta.title': 'Ready to book an appointment?',
+    'home.cta.text': 'Contact us by phone or book online an appointment with one of our doctors.',
     
     // About
     'about.title': 'About Mutsaard Medical Practice',
@@ -207,6 +241,7 @@ const translations = {
     
     // Services
     'services.title': 'Our Services',
+    'services.intro': 'We offer a wide range of medical services for your entire family.',
     'services.gp': 'General Practice',
     'services.gp.desc': 'Complete medical care for all ages',
     'services.chronic': 'Chronic Disease Management',
@@ -245,11 +280,21 @@ const translations = {
     'contact.email': 'Email',
     'contact.emergency': 'Emergency number',
     'contact.gp.oncall': 'GP on-call',
+    'contact.map.title': 'Our locations',
     'contact.form.title': 'Ask your question',
     'contact.form.name': 'Name',
     'contact.form.email': 'Email',
     'contact.form.message': 'Message',
     'contact.form.send': 'Send',
+    
+    // Appointments
+    'appointments.title': 'Book an Appointment',
+    'appointments.subtitle': 'Choose your doctor and book an appointment by phone or online.',
+    'appointments.methods': 'Appointment methods',
+    'appointments.by.phone': 'By phone',
+    'appointments.online': 'Online booking',
+    'appointments.note.title': 'Important note',
+    'appointments.note.text': 'Not all doctors use online calendars. For doctors without an online booking option, please contact them by phone.',
     
     // Footer
     'footer.copyright': '© 2025 Cabinet Mutsaard. All rights reserved.',
