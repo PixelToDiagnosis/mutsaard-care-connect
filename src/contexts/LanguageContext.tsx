@@ -174,7 +174,7 @@ const translations = {
     'aesthetic.treatments': 'Traitements',
     'aesthetic.botox': 'Toxine botulique',
     'aesthetic.botox.desc': 'Atténue les rides d\'expression (front, rides du lion, pattes d\'oie) tout en préservant l\'expression naturelle du visage.',
-    'aesthetic.fillers': 'Fillers à l\'acide hyaluronique',
+    'aesthetic.fillers': 'Produits de comblement à l\'acide hyaluronique',
     'aesthetic.fillers.desc': 'Restaure le volume, lisse les plis, améliore subtilement les lèvres, les joues ou l\'ovale du visage.',
     'aesthetic.collagen': 'Injections stimulant le collagène',
     'aesthetic.collagen.desc': 'Stimule le collagène naturel de la peau pour une amélioration progressive et durable de la texture et de la fermeté.',
