@@ -5,6 +5,9 @@ import { Button } from '@/components/ui/button';
 import { Sparkles, Phone, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import aestheticRoomImage from '@/assets/aesthetic-room.jpg';
+import botoxImage from '@/assets/botox-treatment.jpg';
+import fillersImage from '@/assets/fillers-treatment.jpg';
+import collagenImage from '@/assets/collagen-treatment.jpg';
 
 const Aesthetic = () => {
   const { t } = useLanguage();
@@ -13,14 +16,17 @@ const Aesthetic = () => {
     {
       title: t('aesthetic.botox'),
       description: t('aesthetic.botox.desc'),
+      image: botoxImage,
     },
     {
       title: t('aesthetic.fillers'),
       description: t('aesthetic.fillers.desc'),
+      image: fillersImage,
     },
     {
       title: t('aesthetic.collagen'),
       description: t('aesthetic.collagen.desc'),
+      image: collagenImage,
     },
   ];
 
@@ -44,14 +50,14 @@ const Aesthetic = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-medical-cream via-background to-medical-rose">
+    <div className="min-h-screen bg-gradient-to-b from-medical-rose/20 via-medical-cream/30 to-medical-beige/20">
       {/* Hero Section with Image */}
       <section className="relative overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="bg-gradient-to-br from-medical-rose via-medical-cream to-medical-beige py-16 lg:py-24 px-4">
+          <div className="bg-gradient-to-br from-medical-rose/40 via-medical-cream/50 to-medical-beige/40 py-16 lg:py-24 px-4">
             <div className="container mx-auto max-w-xl space-y-6">
-              <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-background/90 shadow-lg mb-4">
-                <Sparkles className="h-8 w-8 text-primary" />
+              <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-white/90 shadow-lg mb-4">
+                <Sparkles className="h-8 w-8" style={{ color: 'hsl(340, 55%, 65%)' }} />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-foreground">
                 {t('aesthetic.title')}
@@ -73,6 +79,7 @@ const Aesthetic = () => {
               alt="Aesthetic medicine consultation room"
               className="absolute inset-0 w-full h-full object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent to-medical-rose/20" />
           </div>
         </div>
       </section>
@@ -80,18 +87,29 @@ const Aesthetic = () => {
       {/* Treatments Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h2 className="text-3xl font-bold text-center mb-12">{t('aesthetic.treatments')}</h2>
+          <div className="max-w-5xl mx-auto space-y-8">
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">{t('aesthetic.treatments')}</h2>
             
-            <div className="space-y-6">
+            <div className="space-y-8">
               {treatments.map((treatment, index) => (
-                <Card key={index} className="border-none bg-card/60 backdrop-blur-sm shadow-md hover:shadow-lg transition-all">
-                  <CardHeader>
-                    <CardTitle className="text-xl text-foreground">{treatment.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">{treatment.description}</p>
-                  </CardContent>
+                <Card key={index} className="border-none bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all overflow-hidden">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+                    <div className="md:col-span-1 h-48 md:h-auto">
+                      <img 
+                        src={treatment.image} 
+                        alt={treatment.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="md:col-span-2">
+                      <CardHeader>
+                        <CardTitle className="text-xl text-foreground">{treatment.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-muted-foreground leading-relaxed">{treatment.description}</p>
+                      </CardContent>
+                    </div>
+                  </div>
                 </Card>
               ))}
             </div>
@@ -100,16 +118,16 @@ const Aesthetic = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-medical-rose-accent/30">
+      <section className="py-16 bg-gradient-to-b from-medical-rose/10 to-medical-cream/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">{t('aesthetic.faq')}</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">{t('aesthetic.faq')}</h2>
             
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-background/80 backdrop-blur-sm rounded-lg px-6 border-none shadow-sm">
+                <AccordionItem key={index} value={`item-${index}`} className="bg-white/90 backdrop-blur-sm rounded-lg px-6 border-none shadow-sm">
                   <AccordionTrigger className="text-left hover:no-underline">
-                    <span className="font-semibold">{faq.question}</span>
+                    <span className="font-semibold text-foreground">{faq.question}</span>
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed">
                     {faq.answer}
@@ -122,24 +140,24 @@ const Aesthetic = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-b from-medical-cream to-medical-rose">
+      <section className="py-16 bg-gradient-to-b from-medical-cream/30 to-medical-rose/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <Card className="border-none shadow-xl bg-card/80 backdrop-blur-sm">
+            <Card className="border-none shadow-xl bg-white/90 backdrop-blur-sm">
               <CardContent className="p-8 md:p-12">
                 <div className="text-center space-y-6">
-                  <h2 className="text-3xl font-bold">{t('home.book')}</h2>
+                  <h2 className="text-3xl font-bold text-foreground">{t('home.book')}</h2>
                   <p className="text-sm text-muted-foreground">
                     2 Avenue du Forum, 1020 Laeken
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                    <Button size="lg" asChild>
+                    <Button size="lg" asChild style={{ backgroundColor: 'hsl(340, 55%, 65%)', color: 'white' }} className="hover:opacity-90">
                       <Link to="/appointments">
                         <Calendar className="h-4 w-4 mr-2" />
                         {t('appointments.title')}
                       </Link>
                     </Button>
-                    <Button size="lg" variant="outline" asChild>
+                    <Button size="lg" variant="outline" asChild className="border-2" style={{ borderColor: 'hsl(340, 55%, 65%)', color: 'hsl(340, 55%, 65%)' }}>
                       <a href="tel:+3222684040">
                         <Phone className="h-4 w-4 mr-2" />
                         +32 2 268 40 40
