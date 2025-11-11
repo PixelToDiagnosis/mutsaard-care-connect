@@ -47,6 +47,8 @@ const translations = {
     'doctors.title': 'Onze artsen',
     'doctors.gp': 'Huisarts',
     'doctors.gp.aesthetic': 'Huisarts & Esthetische geneeskunde',
+    'doctors.floor.ground': 'Gelijkvloers',
+    'doctors.floor.second': 'Tweede verdieping',
     
     // Services
     'services.title': 'Onze diensten',
@@ -147,6 +149,8 @@ const translations = {
     'doctors.title': 'Nos médecins',
     'doctors.gp': 'Médecin généraliste',
     'doctors.gp.aesthetic': 'Médecin généraliste & Médecine esthétique',
+    'doctors.floor.ground': 'Rez-de-chaussée',
+    'doctors.floor.second': 'Deuxième étage',
     
     // Services
     'services.title': 'Nos services',
@@ -247,6 +251,8 @@ const translations = {
     'doctors.title': 'Our Doctors',
     'doctors.gp': 'General Practitioner',
     'doctors.gp.aesthetic': 'General Practitioner & Aesthetic Medicine',
+    'doctors.floor.ground': 'Ground floor',
+    'doctors.floor.second': 'Second floor',
     
     // Services
     'services.title': 'Our Services',

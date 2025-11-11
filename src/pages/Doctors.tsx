@@ -10,22 +10,22 @@ const Doctors = () => {
     {
       name: 'Dr Philippe Kaisin',
       role: t('doctors.gp'),
-      location: '59 Avenue Mutsaard - Ground Floor',
+      location: `59 Avenue Mutsaard - ${t('doctors.floor.ground')}`,
     },
     {
       name: 'Dr Louise Guesny',
       role: t('doctors.gp'),
-      location: '59 Avenue Mutsaard - Ground Floor',
+      location: `59 Avenue Mutsaard - ${t('doctors.floor.ground')}`,
     },
     {
       name: 'Dr Alina Bousmar',
       role: t('doctors.gp'),
-      location: '59 Avenue Mutsaard - Second Floor',
+      location: `59 Avenue Mutsaard - ${t('doctors.floor.second')}`,
     },
     {
       name: 'Dr Maité Moulart',
       role: t('doctors.gp'),
-      location: '59 Avenue Mutsaard - Second Floor',
+      location: `59 Avenue Mutsaard - ${t('doctors.floor.second')}`,
     },
     {
       name: 'Dr Marie-Eve Bousmar',
