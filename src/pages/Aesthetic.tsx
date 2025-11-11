@@ -87,30 +87,24 @@ const Aesthetic = () => {
       {/* Treatments Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto space-y-8">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">{t('aesthetic.treatments')}</h2>
+          <div className="max-w-5xl mx-auto space-y-12">
+            <h2 className="text-3xl font-bold text-center text-foreground">Traitements proposés</h2>
             
-            <div className="space-y-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {treatments.map((treatment, index) => (
-                <Card key={index} className="border-none bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all overflow-hidden">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-                    <div className="md:col-span-1 h-48 md:h-auto">
-                      <img 
-                        src={treatment.image} 
-                        alt={treatment.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="md:col-span-2">
-                      <CardHeader>
-                        <CardTitle className="text-xl text-foreground">{treatment.title}</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-muted-foreground leading-relaxed">{treatment.description}</p>
-                      </CardContent>
-                    </div>
+                <div key={index} className="space-y-4">
+                  <div className="aspect-square overflow-hidden rounded-lg shadow-lg">
+                    <img 
+                      src={treatment.image} 
+                      alt={treatment.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                </Card>
+                  <div className="text-center space-y-2">
+                    <h3 className="text-xl font-semibold text-foreground">{treatment.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{treatment.description}</p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
