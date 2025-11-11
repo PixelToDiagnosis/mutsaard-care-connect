@@ -160,20 +160,10 @@ const Home = () => {
                   <span className="h-2 w-2 rounded-full bg-primary" />
                   {t('about.languages.list')}
                 </p>
-                <div className="space-y-2">
-                  <p className="flex items-center gap-2 text-foreground/90 font-medium">
-                    <span className="h-2 w-2 rounded-full bg-primary" />
-                    {t('about.locations')}
-                  </p>
-                  <div className="ml-4 space-y-1 text-muted-foreground">
-                    <p className="text-sm">
-                      <span className="font-medium">{t('about.location1.title')}:</span> {t('about.location1')} ({t('about.location1.floor')})
-                    </p>
-                    <p className="text-sm">
-                      <span className="font-medium">{t('about.location2.title')}:</span> {t('about.location2')}
-                    </p>
-                  </div>
-                </div>
+                <p className="flex items-center gap-2 text-foreground/90">
+                  <span className="h-2 w-2 rounded-full bg-primary" />
+                  {t('about.locations')}: 59 Avenue Mutsaard - 2 Avenue du Forum, 1020 Laeken
+                </p>
               </div>
               <Button variant="outline" size="lg" asChild>
                 <Link to="/about">
