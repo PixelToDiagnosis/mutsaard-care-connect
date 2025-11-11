@@ -37,7 +37,9 @@ const translations = {
     'about.locations': 'Onze locaties',
     'about.location1': '59 Avenue Mutsaard, 1020 Laeken',
     'about.location1.floor': 'Gelijkvloers en tweede verdieping',
+    'about.location1.title': 'Hoofdkabinet',
     'about.location2': '2 Avenue du Forum, 1020 Laeken',
+    'about.location2.title': 'Tweede kabinetslocatie',
     'about.languages': 'Gesproken talen',
     'about.languages.list': 'Nederlands, Frans, Engels',
     
@@ -135,7 +137,9 @@ const translations = {
     'about.locations': 'Nos adresses',
     'about.location1': '59 Avenue Mutsaard, 1020 Laeken',
     'about.location1.floor': 'Rez-de-chaussée et deuxième étage',
+    'about.location1.title': 'Cabinet principal',
     'about.location2': '2 Avenue du Forum, 1020 Laeken',
+    'about.location2.title': 'Deuxième site du cabinet',
     'about.languages': 'Langues parlées',
     'about.languages.list': 'Néerlandais, Français, Anglais',
     
@@ -233,7 +237,9 @@ const translations = {
     'about.locations': 'Our locations',
     'about.location1': '59 Avenue Mutsaard, 1020 Laeken',
     'about.location1.floor': 'Ground floor and second floor',
+    'about.location1.title': 'Main practice',
     'about.location2': '2 Avenue du Forum, 1020 Laeken',
+    'about.location2.title': 'Second practice location',
     'about.languages': 'Languages spoken',
     'about.languages.list': 'Dutch, French, English',
     

@@ -38,11 +38,11 @@ const About = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <h3 className="font-semibold">{t('about.location1.floor')}</h3>
+                <h3 className="font-semibold">{t('about.location1.title')}</h3>
                 <p className="text-muted-foreground">{t('about.location1')}</p>
               </div>
               <div className="space-y-2">
-                <h3 className="font-semibold">Dr Marie-Eve Bousmar & Dr Florent Graide</h3>
+                <h3 className="font-semibold">{t('about.location2.title')}</h3>
                 <p className="text-muted-foreground">{t('about.location2')}</p>
               </div>
             </CardContent>
