@@ -1,0 +1,290 @@
+import React, { createContext, useContext, useState, useEffect } from 'react';
+
+type Language = 'nl' | 'fr' | 'en';
+
+interface LanguageContextType {
+  language: Language;
+  setLanguage: (lang: Language) => void;
+  t: (key: string) => string;
+}
+
+const translations = {
+  nl: {
+    // Navigation
+    'nav.home': 'Startpagina',
+    'nav.about': 'Over ons',
+    'nav.doctors': 'Onze artsen',
+    'nav.services': 'Onze diensten',
+    'nav.aesthetic': 'Esthetische geneeskunde',
+    'nav.contact': 'Contact',
+    
+    // Home
+    'home.title': 'Welkom bij Cabinet Mutsaard',
+    'home.subtitle': 'Uw huisartsenpraktijk in Laeken, Brussel',
+    'home.description': 'We bieden toegankelijke, hoogwaardige en continue eerstelijnszorg voor iedereen in onze gemeenschap, met focus op preventie, chronische ziektebeheer en persoonlijke patiëntrelaties.',
+    'home.book': 'Maak een afspraak',
+    'home.aesthetic.banner': 'Ter info: sinds kort biedt het Kabinet Mutsaard ook esthetische geneeskunde aan, uitgevoerd door Dr Marie-Eve Bousmar.',
+    'home.learn.more': 'Meer info',
+    
+    // About
+    'about.title': 'Over Cabinet Mutsaard',
+    'about.mission': 'Onze missie',
+    'about.mission.text': 'We bieden toegankelijke, hoogwaardige en continue eerstelijnszorg voor iedereen in onze gemeenschap, met focus op preventie, chronische ziektebeheer en persoonlijke patiëntrelaties.',
+    'about.locations': 'Onze locaties',
+    'about.location1': '59 Avenue Mutsaard, 1020 Laeken',
+    'about.location2': '2 Avenue du Forum, 1020 Laeken',
+    'about.languages': 'Gesproken talen',
+    'about.languages.list': 'Nederlands, Frans, Engels',
+    
+    // Doctors
+    'doctors.title': 'Onze artsen',
+    'doctors.gp': 'Huisarts',
+    'doctors.gp.aesthetic': 'Huisarts & Esthetische geneeskunde',
+    
+    // Services
+    'services.title': 'Onze diensten',
+    'services.gp': 'Huisartsengeneeskunde',
+    'services.gp.desc': 'Volledige medische zorg voor alle leeftijden',
+    'services.chronic': 'Chronische ziekten',
+    'services.chronic.desc': 'Beheer van chronische aandoeningen',
+    'services.vaccinations': 'Vaccinaties',
+    'services.vaccinations.desc': 'Alle preventieve vaccinaties',
+    'services.acute': 'Acute zorg',
+    'services.acute.desc': 'Voor kleine urgente problemen (geen spoedgevallen)',
+    'services.aesthetic': 'Esthetische geneeskunde',
+    'services.aesthetic.desc': 'Natuurlijke resultaten met medische precisie',
+    
+    // Aesthetic
+    'aesthetic.title': 'Esthetische geneeskunde',
+    'aesthetic.intro': 'Dr Marie-Eve Bousmar biedt consultaties in esthetische geneeskunde aan bij Cabinet Mutsaard (Laeken). Haar aanpak combineert medische precisie met natuurlijke resultaten, binnen een vertrouwde huisartsomgeving.',
+    'aesthetic.treatments': 'Behandelingen',
+    'aesthetic.botox': 'Botulinetoxine (Botox)',
+    'aesthetic.botox.desc': 'Verzacht expressierimpels (voorhoofd, fronslijnen, kraaienpootjes) met behoud van natuurlijke gezichtsuitdrukking.',
+    'aesthetic.fillers': 'Hyaluronzuur fillers',
+    'aesthetic.fillers.desc': 'Herstel volume, verzacht plooien, subtiele lip-, wang- of kaaklijnverbetering.',
+    'aesthetic.collagen': 'Collageenstimulerende injecties',
+    'aesthetic.collagen.desc': 'Stimuleer het eigen collageen van de huid voor een geleidelijke en langdurige verbetering van textuur en stevigheid.',
+    'aesthetic.faq': 'Veelgestelde vragen',
+    'aesthetic.faq.who': 'Voor wie zijn deze behandelingen?',
+    'aesthetic.faq.who.answer': 'Veilige, medische procedures voor wie op zoek is naar subtiele, natuurlijke verjonging zonder chirurgie.',
+    'aesthetic.faq.pain': 'Zijn de behandelingen pijnlijk?',
+    'aesthetic.faq.pain.answer': 'Minimaal ongemak; procedures worden uitgevoerd door een gekwalificeerde arts. Tijdelijke roodheid of zwelling kan optreden.',
+    'aesthetic.faq.results': 'Wanneer zie ik resultaten?',
+    'aesthetic.faq.results.answer': 'Botox: 5-14 dagen; Fillers: onmiddellijk; Collageenstimulatie: geleidelijk over weken tot maanden.',
+    'aesthetic.faq.price': 'Wat zijn de prijzen?',
+    'aesthetic.faq.price.answer': 'Indicatieve prijzen (excl. consultatie): Botox vanaf ≈ €150 per zone, Fillers vanaf ≈ €350 per ml, Collageenstimulatie op aanvraag.',
+    
+    // Contact
+    'contact.title': 'Contact',
+    'contact.address': 'Adres',
+    'contact.phone': 'Telefoon',
+    'contact.email': 'E-mail',
+    'contact.emergency': 'Spoednummer',
+    'contact.gp.oncall': 'Huisartsenwachtpost',
+    'contact.form.title': 'Stel uw vraag',
+    'contact.form.name': 'Naam',
+    'contact.form.email': 'E-mail',
+    'contact.form.message': 'Bericht',
+    'contact.form.send': 'Verstuur',
+    
+    // Footer
+    'footer.copyright': '© 2025 Cabinet Mutsaard. Alle rechten voorbehouden.',
+    'footer.privacy': 'Privacybeleid',
+  },
+  fr: {
+    // Navigation
+    'nav.home': 'Accueil',
+    'nav.about': 'À propos',
+    'nav.doctors': 'Nos médecins',
+    'nav.services': 'Nos services',
+    'nav.aesthetic': 'Médecine esthétique',
+    'nav.contact': 'Contact',
+    
+    // Home
+    'home.title': 'Bienvenue au Cabinet Mutsaard',
+    'home.subtitle': 'Votre cabinet de médecine générale à Laeken, Bruxelles',
+    'home.description': 'Nous offrons des soins de santé primaires accessibles, de haute qualité et continus pour tous dans notre communauté, en mettant l\'accent sur la prévention, la gestion des maladies chroniques et les relations personnelles avec les patients.',
+    'home.book': 'Prendre rendez-vous',
+    'home.aesthetic.banner': 'À titre informatif : le Cabinet Mutsaard propose désormais des consultations de médecine esthétique assurées par le Dr Marie-Eve Bousmar.',
+    'home.learn.more': 'En savoir plus',
+    
+    // About
+    'about.title': 'À propos du Cabinet Mutsaard',
+    'about.mission': 'Notre mission',
+    'about.mission.text': 'Nous offrons des soins de santé primaires accessibles, de haute qualité et continus pour tous dans notre communauté, en mettant l\'accent sur la prévention, la gestion des maladies chroniques et les relations personnelles avec les patients.',
+    'about.locations': 'Nos adresses',
+    'about.location1': '59 Avenue Mutsaard, 1020 Laeken',
+    'about.location2': '2 Avenue du Forum, 1020 Laeken',
+    'about.languages': 'Langues parlées',
+    'about.languages.list': 'Néerlandais, Français, Anglais',
+    
+    // Doctors
+    'doctors.title': 'Nos médecins',
+    'doctors.gp': 'Médecin généraliste',
+    'doctors.gp.aesthetic': 'Médecin généraliste & Médecine esthétique',
+    
+    // Services
+    'services.title': 'Nos services',
+    'services.gp': 'Médecine générale',
+    'services.gp.desc': 'Soins médicaux complets pour tous les âges',
+    'services.chronic': 'Maladies chroniques',
+    'services.chronic.desc': 'Gestion des affections chroniques',
+    'services.vaccinations': 'Vaccinations',
+    'services.vaccinations.desc': 'Toutes les vaccinations préventives',
+    'services.acute': 'Soins aigus',
+    'services.acute.desc': 'Pour les petits problèmes urgents (pas d\'urgences)',
+    'services.aesthetic': 'Médecine esthétique',
+    'services.aesthetic.desc': 'Résultats naturels avec précision médicale',
+    
+    // Aesthetic
+    'aesthetic.title': 'Médecine esthétique',
+    'aesthetic.intro': 'Le Dr Marie-Eve Bousmar propose des consultations de médecine esthétique au Cabinet Mutsaard (Laeken). Son approche allie précision médicale et résultats naturels, dans un environnement médical de confiance.',
+    'aesthetic.treatments': 'Traitements',
+    'aesthetic.botox': 'Toxine botulique (Botox)',
+    'aesthetic.botox.desc': 'Atténue les rides d\'expression (front, rides du lion, pattes d\'oie) tout en préservant l\'expression naturelle du visage.',
+    'aesthetic.fillers': 'Fillers à l\'acide hyaluronique',
+    'aesthetic.fillers.desc': 'Restaure le volume, lisse les plis, améliore subtilement les lèvres, les joues ou l\'ovale du visage.',
+    'aesthetic.collagen': 'Injections stimulant le collagène',
+    'aesthetic.collagen.desc': 'Stimule le collagène naturel de la peau pour une amélioration progressive et durable de la texture et de la fermeté.',
+    'aesthetic.faq': 'Questions fréquentes',
+    'aesthetic.faq.who': 'Pour qui sont ces traitements ?',
+    'aesthetic.faq.who.answer': 'Procédures médicales sûres pour ceux qui recherchent un rajeunissement subtil et naturel sans chirurgie.',
+    'aesthetic.faq.pain': 'Les traitements sont-ils douloureux ?',
+    'aesthetic.faq.pain.answer': 'Inconfort minimal ; les procédures sont effectuées par un médecin qualifié. Une rougeur ou un gonflement temporaire peut survenir.',
+    'aesthetic.faq.results': 'Quand verrai-je les résultats ?',
+    'aesthetic.faq.results.answer': 'Botox : 5-14 jours ; Fillers : immédiat ; Stimulation collagène : progressif sur plusieurs semaines à mois.',
+    'aesthetic.faq.price': 'Quels sont les prix ?',
+    'aesthetic.faq.price.answer': 'Prix indicatifs (hors consultation) : Botox à partir de ≈ 150€ par zone, Fillers à partir de ≈ 350€ par ml, Stimulation collagène sur demande.',
+    
+    // Contact
+    'contact.title': 'Contact',
+    'contact.address': 'Adresse',
+    'contact.phone': 'Téléphone',
+    'contact.email': 'E-mail',
+    'contact.emergency': 'Numéro d\'urgence',
+    'contact.gp.oncall': 'Garde médecins généralistes',
+    'contact.form.title': 'Posez votre question',
+    'contact.form.name': 'Nom',
+    'contact.form.email': 'E-mail',
+    'contact.form.message': 'Message',
+    'contact.form.send': 'Envoyer',
+    
+    // Footer
+    'footer.copyright': '© 2025 Cabinet Mutsaard. Tous droits réservés.',
+    'footer.privacy': 'Politique de confidentialité',
+  },
+  en: {
+    // Navigation
+    'nav.home': 'Home',
+    'nav.about': 'About Us',
+    'nav.doctors': 'Our Doctors',
+    'nav.services': 'Our Services',
+    'nav.aesthetic': 'Aesthetic Medicine',
+    'nav.contact': 'Contact',
+    
+    // Home
+    'home.title': 'Welcome to Mutsaard Medical Practice',
+    'home.subtitle': 'Your family practice in Laeken, Brussels',
+    'home.description': 'We provide accessible, high-quality and continuous primary care for everyone in our community, focusing on prevention, chronic-disease management and personal patient relationships.',
+    'home.book': 'Book an appointment',
+    'home.aesthetic.banner': 'For your information: Mutsaard Medical Practice now also offers aesthetic medicine consultations by Dr Marie-Eve Bousmar.',
+    'home.learn.more': 'Learn more',
+    
+    // About
+    'about.title': 'About Mutsaard Medical Practice',
+    'about.mission': 'Our mission',
+    'about.mission.text': 'We provide accessible, high-quality and continuous primary care for everyone in our community, focusing on prevention, chronic-disease management and personal patient relationships.',
+    'about.locations': 'Our locations',
+    'about.location1': '59 Avenue Mutsaard, 1020 Laeken',
+    'about.location2': '2 Avenue du Forum, 1020 Laeken',
+    'about.languages': 'Languages spoken',
+    'about.languages.list': 'Dutch, French, English',
+    
+    // Doctors
+    'doctors.title': 'Our Doctors',
+    'doctors.gp': 'General Practitioner',
+    'doctors.gp.aesthetic': 'General Practitioner & Aesthetic Medicine',
+    
+    // Services
+    'services.title': 'Our Services',
+    'services.gp': 'General Practice',
+    'services.gp.desc': 'Complete medical care for all ages',
+    'services.chronic': 'Chronic Disease Management',
+    'services.chronic.desc': 'Management of chronic conditions',
+    'services.vaccinations': 'Vaccinations',
+    'services.vaccinations.desc': 'All preventive vaccinations',
+    'services.acute': 'Acute Care',
+    'services.acute.desc': 'For minor urgent issues (no emergencies)',
+    'services.aesthetic': 'Aesthetic Medicine',
+    'services.aesthetic.desc': 'Natural results with medical precision',
+    
+    // Aesthetic
+    'aesthetic.title': 'Aesthetic Medicine',
+    'aesthetic.intro': 'Dr Marie-Eve Bousmar offers aesthetic medicine consultations at Mutsaard Medical Practice (Laeken). Her approach combines medical precision and natural results, within a trusted GP environment.',
+    'aesthetic.treatments': 'Treatments',
+    'aesthetic.botox': 'Botulinum toxin (Botox)',
+    'aesthetic.botox.desc': 'Softens expression lines (forehead, frown lines, crow\'s feet) while preserving natural facial expression.',
+    'aesthetic.fillers': 'Hyaluronic acid fillers',
+    'aesthetic.fillers.desc': 'Restore volume, smooth folds, subtly lift lips, cheeks, or jawline.',
+    'aesthetic.collagen': 'Collagen inducing injections',
+    'aesthetic.collagen.desc': 'Stimulate the skin\'s own collagen for a gradual and long-lasting improvement in texture and firmness.',
+    'aesthetic.faq': 'Frequently Asked Questions',
+    'aesthetic.faq.who': 'Who are these treatments for?',
+    'aesthetic.faq.who.answer': 'Safe, medical procedures for those seeking subtle, natural rejuvenation without surgery.',
+    'aesthetic.faq.pain': 'Are the treatments painful?',
+    'aesthetic.faq.pain.answer': 'Minimal discomfort; procedures are performed by a qualified physician. Temporary redness or swelling may occur.',
+    'aesthetic.faq.results': 'When will I see results?',
+    'aesthetic.faq.results.answer': 'Botox: 5-14 days; Fillers: immediate; Collagen inducers: gradual over weeks to months.',
+    'aesthetic.faq.price': 'What are the prices?',
+    'aesthetic.faq.price.answer': 'Indicative prices (excluding consultation): Botox from ≈ €150 per area, Fillers from ≈ €350 per ml, Collagen inducers on request.',
+    
+    // Contact
+    'contact.title': 'Contact',
+    'contact.address': 'Address',
+    'contact.phone': 'Phone',
+    'contact.email': 'Email',
+    'contact.emergency': 'Emergency number',
+    'contact.gp.oncall': 'GP on-call',
+    'contact.form.title': 'Ask your question',
+    'contact.form.name': 'Name',
+    'contact.form.email': 'Email',
+    'contact.form.message': 'Message',
+    'contact.form.send': 'Send',
+    
+    // Footer
+    'footer.copyright': '© 2025 Cabinet Mutsaard. All rights reserved.',
+    'footer.privacy': 'Privacy Policy',
+  },
+};
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+
+export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [language, setLanguage] = useState<Language>(() => {
+    const saved = localStorage.getItem('language');
+    return (saved as Language) || 'nl';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('language', language);
+    document.documentElement.lang = language;
+  }, [language]);
+
+  const t = (key: string): string => {
+    return translations[language][key as keyof typeof translations.nl] || key;
+  };
+
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+};
+
+export const useLanguage = () => {
+  const context = useContext(LanguageContext);
+  if (!context) {
+    throw new Error('useLanguage must be used within LanguageProvider');
+  }
+  return context;
+};
