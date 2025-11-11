@@ -65,6 +65,9 @@ const Aesthetic = () => {
               <h2 className="text-2xl font-semibold text-foreground/90">
                 {t('aesthetic.welcome')}
               </h2>
+              <p className="text-base text-foreground/70 italic">
+                Soigner, écouter, révéler la beauté naturelle de chacun : une approche globale du bien-être, entre santé et esthétique.
+              </p>
               <p className="text-lg text-foreground/80 leading-relaxed whitespace-pre-line">
                 {t('aesthetic.intro')}
               </p>
