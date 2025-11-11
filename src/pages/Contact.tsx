@@ -25,12 +25,12 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-3">
                 <div>
-                  <p className="font-medium">Ground Floor & Second Floor</p>
+                  <p className="font-medium">{t('about.location1.title')}</p>
                   <p className="text-muted-foreground">59 Avenue Mutsaard</p>
                   <p className="text-muted-foreground">1020 Laeken, Brussels</p>
                 </div>
                 <div>
-                  <p className="font-medium">Dr Marie-Eve Bousmar & Dr Florent Graide</p>
+                  <p className="font-medium">{t('about.location2.title')}</p>
                   <p className="text-muted-foreground">2 Avenue du Forum</p>
                   <p className="text-muted-foreground">1020 Laeken, Brussels</p>
                 </div>
@@ -87,9 +87,9 @@ const Contact = () => {
             <CardHeader>
               <CardTitle>{t('contact.map.title')}</CardTitle>
             </CardHeader>
-            <CardContent className="p-0">
+            <CardContent className="p-0 relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.873!2d4.349!3d50.8806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3f5d1a0a0a1%3A0x1234567890abcdef!2sAvenue%20Mutsaard%2059%2C%201020%20Laeken!5e0!3m2!1sen!2sbe!4v1234567890123&markers=color:blue%7Clabel:1%7C50.8806,4.349&markers=color:blue%7Clabel:2%7C50.8808,4.3495"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.8!2d4.349!3d50.8806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDUyJzUwLjIiTiA0wrAyMCc1Ni40IkU!5e0!3m2!1sen!2sbe!4v1"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
@@ -98,6 +98,23 @@ const Contact = () => {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Cabinet Mutsaard Locations"
               />
+              {/* Custom markers overlay */}
+              <div className="absolute top-4 left-4 bg-background/95 rounded-lg p-4 shadow-lg space-y-2 text-sm">
+                <div className="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium">59 Avenue Mutsaard</p>
+                    <p className="text-xs text-muted-foreground">1020 Laeken</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium">2 Avenue du Forum</p>
+                    <p className="text-xs text-muted-foreground">1020 Laeken</p>
+                  </div>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
