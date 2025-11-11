@@ -105,7 +105,7 @@ const translations = {
     'appointments.by.phone': 'Via telefoon',
     'appointments.online': 'Online boeken',
     'appointments.note.title': 'Let op',
-    'appointments.note.text': 'Niet alle artsen gebruiken online agenda\'s. Voor artsen zonder online boekingsoptie, gelieve telefonisch contact op te nemen.',
+    'appointments.note.text': 'Voor artsen zonder online reserveringsoptie, gelieve het secretariaat telefonisch te contacteren tussen 8u en 16u.',
     
     // Footer
     'footer.copyright': '© 2025 Cabinet Mutsaard. Alle rechten voorbehouden.',
@@ -207,7 +207,7 @@ const translations = {
     'appointments.by.phone': 'Par téléphone',
     'appointments.online': 'Réservation en ligne',
     'appointments.note.title': 'Note importante',
-    'appointments.note.text': 'Tous les médecins n\'utilisent pas d\'agendas en ligne. Pour les médecins sans option de réservation en ligne, veuillez les contacter par téléphone.',
+    'appointments.note.text': 'Pour les médecins sans option de réservation en ligne, veuillez contacter le secrétariat par téléphone entre 8h et 16h.',
     
     // Footer
     'footer.copyright': '© 2025 Cabinet Mutsaard. Tous droits réservés.',
@@ -309,7 +309,7 @@ const translations = {
     'appointments.by.phone': 'By phone',
     'appointments.online': 'Online booking',
     'appointments.note.title': 'Important note',
-    'appointments.note.text': 'Not all doctors use online calendars. For doctors without an online booking option, please contact them by phone.',
+    'appointments.note.text': 'For doctors without online booking option, please contact the secretariat by phone between 8am and 4pm.',
     
     // Footer
     'footer.copyright': '© 2025 Cabinet Mutsaard. All rights reserved.',
