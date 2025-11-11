@@ -83,21 +83,39 @@ const Contact = () => {
           </div>
 
           {/* Map */}
-          <Card>
+          <Card className="relative">
             <CardHeader>
               <CardTitle>{t('contact.map.title')}</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.8!2d4.349!3d50.8806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3f5d1a0a0a1%3A0x1!2s59+Avenue+Mutsaard%2C+1020+Bruxelles!5e0!3m2!1sfr!2sbe!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.77!2d4.3515!3d50.8815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDUyJzUzLjQiTiA0wrAyMScwNS42IkU!5e0!3m2!1sfr!2sbe!4v1"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Cabinet Mutsaard - 59 Avenue Mutsaard"
+                title="Cabinet Mutsaard - Nos adresses"
               />
+              {/* Legend overlay */}
+              <div className="absolute bottom-4 left-4 bg-background/95 backdrop-blur rounded-lg p-4 shadow-lg space-y-2 text-sm">
+                <p className="font-semibold text-foreground mb-2">{t('contact.map.title')}</p>
+                <div className="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium text-foreground">59 Avenue Mutsaard</p>
+                    <p className="text-xs text-muted-foreground">1020 Laeken</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium text-foreground">2 Avenue du Forum</p>
+                    <p className="text-xs text-muted-foreground">1020 Laeken</p>
+                  </div>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
