@@ -82,35 +82,25 @@ const Appointments = () => {
                     </p>
                     
                     {/* Phone Appointment */}
-                    <Button
-                      variant="outline"
-                      className="w-full justify-start gap-3"
-                      asChild
+                    <a 
+                      href={`tel:${doctor.phone.replace(/\s/g, '')}`}
+                      className="flex items-center gap-3 hover:opacity-80 transition-opacity"
                     >
-                      <a href={`tel:${doctor.phone.replace(/\s/g, '')}`}>
-                        <Phone className="h-4 w-4" />
-                        <div className="text-left">
-                          <div className="font-medium">{t('appointments.by.phone')}</div>
-                          <div className="text-xs text-muted-foreground">{doctor.phone}</div>
-                        </div>
-                      </a>
-                    </Button>
+                      <Phone className="h-5 w-5 text-primary" />
+                      <span className="text-foreground">{doctor.phone}</span>
+                    </a>
 
                     {/* Medispring Appointment */}
                     {doctor.medispring && (
-                      <Button
-                        variant="outline"
-                        className="w-full justify-start gap-3"
-                        asChild
+                      <a 
+                        href={doctor.medispring} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 hover:opacity-80 transition-opacity"
                       >
-                        <a href={doctor.medispring} target="_blank" rel="noopener noreferrer">
-                          <Calendar className="h-4 w-4" />
-                          <div className="text-left">
-                            <div className="font-medium">{t('appointments.online')}</div>
-                            <div className="text-xs text-muted-foreground">Medispring.be</div>
-                          </div>
-                        </a>
-                      </Button>
+                        <Calendar className="h-5 w-5 text-primary" />
+                        <span className="text-foreground">Medispring.be</span>
+                      </a>
                     )}
                   </div>
                 </CardContent>
