@@ -35,7 +35,7 @@ const Appointments = () => {
       name: 'Dr Marie-Eve Bousmar',
       location: '2 Avenue du Forum',
       phone: '+32 2 268 40 40',
-      medispring: 'https://medispring.be',
+      medispring: 'https://agenda.medispring.be/ms-kaisin-ph-d21c9f4c-191d-4e33-a2c9-81dbe292bf12/idHcp_Bousmar-mari-78449_ms-kaisin-ph-d21c9f4c-191d-4e33-a2c9-81dbe292bf12',
       aesthetic: true,
     },
     {
