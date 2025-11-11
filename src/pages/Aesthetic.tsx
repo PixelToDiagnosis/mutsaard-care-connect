@@ -62,8 +62,8 @@ const Aesthetic = () => {
               <p className="text-lg text-foreground/80 leading-relaxed whitespace-pre-line">
                 {t('aesthetic.intro')}
               </p>
-              <p className="text-base text-muted-foreground">
-                Dr Marie-Eve Bousmar - 2 Avenue du Forum, 1020 Laeken
+              <p className="text-base text-muted-foreground font-medium">
+                Adresse du cabinet : 2 Avenue du Forum, 1020 Laeken
               </p>
             </div>
           </div>
@@ -129,9 +129,6 @@ const Aesthetic = () => {
               <CardContent className="p-8 md:p-12">
                 <div className="text-center space-y-6">
                   <h2 className="text-3xl font-bold">{t('home.book')}</h2>
-                  <p className="text-lg text-muted-foreground">
-                    Dr Marie-Eve Bousmar
-                  </p>
                   <p className="text-sm text-muted-foreground">
                     2 Avenue du Forum, 1020 Laeken
                   </p>
