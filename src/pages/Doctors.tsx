@@ -73,7 +73,8 @@ const Doctors = () => {
                   {doctor.aesthetic && (
                     <Link 
                       to="/aesthetic"
-                      className="inline-block text-sm text-primary hover:underline font-medium"
+                      className="inline-block text-sm hover:underline font-medium"
+                      style={{ color: 'hsl(var(--medical-rose))' }}
                     >
                       {t('nav.aesthetic')} →
                     </Link>
