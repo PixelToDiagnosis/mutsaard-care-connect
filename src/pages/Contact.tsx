@@ -89,7 +89,7 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="p-0">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.77!2d4.3515!3d50.8815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDUyJzUzLjQiTiA0wrAyMScwNS42IkU!5e0!3m2!1sfr!2sbe!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5033.540!2d4.3502!3d50.8810!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3f6a8b0f7f7%3A0x9c3e6f8d5e4a2b1c!2s59%20Avenue%20Mutsaard%2C%201020%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1234567890123!5m2!1sfr!2sbe"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
@@ -99,7 +99,7 @@ const Contact = () => {
                 title="Cabinet Mutsaard - Nos adresses"
               />
               {/* Legend overlay */}
-              <div className="absolute bottom-4 left-4 bg-background/95 backdrop-blur rounded-lg p-4 shadow-lg space-y-2 text-sm">
+              <div className="absolute bottom-4 left-4 bg-background/95 backdrop-blur rounded-lg p-4 shadow-lg space-y-2 text-sm max-w-xs">
                 <p className="font-semibold text-foreground mb-2">{t('contact.map.title')}</p>
                 <div className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
