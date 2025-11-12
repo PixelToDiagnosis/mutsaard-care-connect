@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/components/ui/button';
 import { Sparkles, Phone, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import aestheticRoomImage from '@/assets/aesthetic-room.jpg';
+import feminineSilhouette from '@/assets/feminine-silhouette.jpg';
 import botoxImage from '@/assets/botox-treatment.jpg';
 import fillersImage from '@/assets/fillers-treatment.jpg';
 import collagenImage from '@/assets/collagen-treatment.jpg';
@@ -74,10 +74,19 @@ const Aesthetic = () => {
               <p className="text-base text-muted-foreground font-medium pt-4">
                 {t('aesthetic.office.address')}
               </p>
+            </div>
+          </div>
+          <div className="hidden lg:flex items-center justify-center bg-gradient-to-bl from-medical-beige/30 to-medical-rose/20 p-12">
+            <div className="max-w-md">
+              <img 
+                src={feminineSilhouette} 
+                alt="Abstract feminine silhouette"
+                className="w-full h-auto object-contain"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* Treatments Section */}
       <section className="py-20">
