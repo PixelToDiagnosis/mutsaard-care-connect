@@ -74,18 +74,10 @@ const Aesthetic = () => {
               <p className="text-base text-muted-foreground font-medium pt-4">
                 {t('aesthetic.office.address')}
               </p>
-            </div>
-          </div>
-          <div className="hidden lg:block relative h-[500px]">
-            <img 
-              src={aestheticRoomImage} 
-              alt="Aesthetic medicine consultation room"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent to-medical-rose/20" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Treatments Section */}
       <section className="py-20">
