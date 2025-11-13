@@ -76,7 +76,7 @@ const Aesthetic = () => {
               </p>
             </div>
           </div>
-          <div className="hidden lg:flex items-center justify-center bg-gradient-to-bl from-medical-beige/30 to-medical-rose/20 p-12">
+          <div className="hidden lg:flex items-center justify-center bg-gradient-to-br from-medical-rose/40 via-medical-cream/50 to-medical-beige/40 p-12">
             <div className="max-w-md">
               <img 
                 src={feminineSilhouette} 
