@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/components/ui/button';
 import { Sparkles, Phone, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import feminineSilhouette from '@/assets/feminine-silhouette-elegant.svg';
+import feminineSilhouette from '@/assets/feminine-silhouette-elegant.png';
 import botoxImage from '@/assets/botox-treatment.jpg';
 import fillersImage from '@/assets/fillers-treatment.jpg';
 import collagenImage from '@/assets/collagen-treatment.jpg';
