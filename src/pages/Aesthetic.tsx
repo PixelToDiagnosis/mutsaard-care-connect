@@ -150,10 +150,10 @@ const Aesthetic = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
                     <Button size="lg" asChild style={{ backgroundColor: 'hsl(340, 55%, 65%)', color: 'white' }} className="hover:opacity-90">
-                      <Link to="/appointments">
+                      <a href="https://agenda.medispring.be/ms-kaisin-ph-d21c9f4c-191d-4e33-a2c9-81dbe292bf12/idHcp_Bousmar-mari-78449_ms-kaisin-ph-d21c9f4c-191d-4e33-a2c9-81dbe292bf12" target="_blank" rel="noopener noreferrer">
                         <Calendar className="h-4 w-4 mr-2" />
                         {t('appointments.title')}
-                      </Link>
+                      </a>
                     </Button>
                     <Button size="lg" variant="outline" asChild className="border-2" style={{ borderColor: 'hsl(340, 55%, 65%)', color: 'hsl(340, 55%, 65%)' }}>
                       <a href="tel:+3222684040">
