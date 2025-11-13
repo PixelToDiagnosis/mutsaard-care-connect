@@ -50,11 +50,11 @@ const Aesthetic = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-medical-rose/20 via-medical-cream/30 to-medical-beige/20">
+    <div className="min-h-screen bg-medical-rose">
       {/* Hero Section with Image */}
       <section className="relative overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="bg-gradient-to-br from-medical-rose/40 via-medical-cream/50 to-medical-beige/40 py-20 lg:py-28 px-4">
+          <div className="bg-medical-rose py-20 lg:py-28 px-4">
             <div className="container mx-auto max-w-xl space-y-8">
               <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-white/90 shadow-lg mb-6">
                 <Sparkles className="h-8 w-8" style={{ color: 'hsl(340, 55%, 65%)' }} />
@@ -76,7 +76,7 @@ const Aesthetic = () => {
               </p>
             </div>
           </div>
-          <div className="hidden lg:flex items-center justify-center bg-gradient-to-bl from-medical-beige/30 to-medical-rose/20 p-12">
+          <div className="hidden lg:flex items-center justify-center bg-medical-rose p-12">
             <div className="max-w-md">
               <img 
                 src={feminineSilhouette} 
@@ -116,7 +116,7 @@ const Aesthetic = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gradient-to-b from-medical-rose/10 to-medical-cream/20">
+      <section className="py-20 bg-medical-rose">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-16 text-foreground">{t('aesthetic.faq')}</h2>
@@ -138,7 +138,7 @@ const Aesthetic = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-medical-cream/30 to-medical-rose/20">
+      <section className="py-20 bg-medical-rose">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <Card className="border-none shadow-xl bg-white/90 backdrop-blur-sm">
