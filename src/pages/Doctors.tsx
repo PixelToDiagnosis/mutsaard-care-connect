@@ -64,6 +64,7 @@ const Doctors = () => {
                   </div>
                   <CardTitle className="text-xl">{doctor.name}</CardTitle>
                   <CardDescription className="text-base">{doctor.role}</CardDescription>
+                  <p className="text-sm text-muted-foreground italic mt-1">{t('doctors.nonConventioned')}</p>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2 text-sm text-muted-foreground">

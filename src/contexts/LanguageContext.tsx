@@ -49,6 +49,7 @@ const translations = {
     'doctors.gp.aesthetic': 'Huisarts & Esthetische geneeskunde',
     'doctors.floor.ground': 'Gelijkvloers',
     'doctors.floor.second': 'Tweede verdieping',
+    'doctors.nonConventioned': 'Niet geconventioneerd',
     
     // Services
     'services.title': 'Onze diensten',
@@ -155,6 +156,7 @@ const translations = {
     'doctors.gp.aesthetic': 'Médecin généraliste & Médecine esthétique',
     'doctors.floor.ground': 'Rez-de-chaussée',
     'doctors.floor.second': 'Deuxième étage',
+    'doctors.nonConventioned': 'Non conventionné',
     
     // Services
     'services.title': 'Nos services',
@@ -261,6 +263,7 @@ const translations = {
     'doctors.gp.aesthetic': 'General Practitioner & Aesthetic Medicine',
     'doctors.floor.ground': 'Ground floor',
     'doctors.floor.second': 'Second floor',
+    'doctors.nonConventioned': 'Non-conventioned',
     
     // Services
     'services.title': 'Our Services',
