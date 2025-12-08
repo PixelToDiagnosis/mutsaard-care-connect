@@ -51,7 +51,7 @@ const translations = {
     'doctors.floor.second': 'Tweede verdieping',
     'doctors.nonConventioned': 'Niet geconventioneerd',
     'doctors.info.title': 'Belangrijke informatie',
-    'doctors.info.point1': 'De vaccinatiecampagne tegen griep is gestart voor het seizoen 2025-2026. Zoals elk jaar is de samenstelling van de vaccins aangepast aan de nieuwe circulerende virusstammen. De Hoge Gezondheidsraad (HGR) beveelt aan om vanaf half oktober te beginnen met vaccineren voor een optimale bescherming vóór de epidemische piek.',
+    'doctors.info.point1': 'De vaccinatiecampagne tegen de griep is gestart voor het seizoen 2025-2026. Zoals elk jaar is de samenstelling van de vaccins aangepast aan de nieuwe circulerende virusstammen. De Hoge Gezondheidsraad (HGR) beveelt aan om vanaf half oktober te beginnen met vaccineren voor een optimale bescherming vóór de epidemische piek.',
     'doctors.info.point1.link': 'https://professionnels.vaccination-info.be/vaccination-contre-la-grippe-saisonniere-saison-2025-2026/',
     'doctors.info.point2': 'Dr. Maité Moulart is momenteel met zwangerschapsverlof, haar terugkeer is gepland voor begin mei 2026.',
     'doctors.info.point3': 'Dr. Alina Bousmar gaat met zwangerschapsverlof vanaf 28 januari 2026 tot 11 mei 2026.',
