@@ -53,7 +53,7 @@ const translations = {
     'doctors.info.title': 'Belangrijke informatie',
     'doctors.info.point1': 'De vaccinatiecampagne tegen griep is gestart voor het seizoen 2025-2026. Zoals elk jaar is de samenstelling van de vaccins aangepast aan de nieuwe circulerende virusstammen. De Hoge Gezondheidsraad (HGR) beveelt aan om vanaf half oktober te beginnen met vaccineren voor een optimale bescherming vóór de epidemische piek.',
     'doctors.info.point1.link': 'https://professionnels.vaccination-info.be/vaccination-contre-la-grippe-saisonniere-saison-2025-2026/',
-    'doctors.info.point2': 'De honoraria worden aan het einde van elke consultatie betaald.',
+    'doctors.info.point2': 'Dr. Maité Moulart is momenteel met zwangerschapsverlof, haar terugkeer is gepland voor begin mei 2026.',
     'doctors.info.point3': 'Wij aanvaarden betalingen per Bancontact of contant.',
     
     // Services
@@ -165,7 +165,7 @@ const translations = {
     'doctors.info.title': 'Informations importantes',
     'doctors.info.point1': 'La campagne de vaccination contre la grippe a débuté pour la saison 2025-2026. Comme chaque année, la composition des vaccins a été actualisée pour s\'adapter aux nouvelles souches virales circulantes. Le Conseil Supérieur de la Santé (CSS) recommande de débuter la vaccination dès la mi-octobre, afin d\'assurer une protection optimale avant le pic épidémique.',
     'doctors.info.point1.link': 'https://professionnels.vaccination-info.be/vaccination-contre-la-grippe-saisonniere-saison-2025-2026/',
-    'doctors.info.point2': 'Les honoraires sont réglés à la fin de chaque consultation.',
+    'doctors.info.point2': 'Le Dr Maité Moulart est actuellement en congé maternité, son retour est prévu pour début mai 2026.',
     'doctors.info.point3': 'Nous acceptons les paiements par Bancontact ou en espèces.',
     
     // Services
@@ -277,7 +277,7 @@ const translations = {
     'doctors.info.title': 'Important information',
     'doctors.info.point1': 'The flu vaccination campaign has started for the 2025-2026 season. As every year, the vaccine composition has been updated to match the new circulating viral strains. The Superior Health Council recommends starting vaccination from mid-October to ensure optimal protection before the epidemic peak.',
     'doctors.info.point1.link': 'https://professionnels.vaccination-info.be/vaccination-contre-la-grippe-saisonniere-saison-2025-2026/',
-    'doctors.info.point2': 'Fees are settled at the end of each consultation.',
+    'doctors.info.point2': 'Dr. Maité Moulart is currently on maternity leave, her return is expected in early May 2026.',
     'doctors.info.point3': 'We accept payments by Bancontact or cash.',
     
     // Services
