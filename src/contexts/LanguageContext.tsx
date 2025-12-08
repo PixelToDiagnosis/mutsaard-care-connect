@@ -165,7 +165,7 @@ const translations = {
     'doctors.info.title': 'Informations importantes',
     'doctors.info.point1': 'La campagne de vaccination contre la grippe a débuté pour la saison 2025-2026. Comme chaque année, la composition des vaccins a été actualisée pour s\'adapter aux nouvelles souches virales circulantes. Le Conseil Supérieur de la Santé (CSS) recommande de débuter la vaccination dès la mi-octobre, afin d\'assurer une protection optimale avant le pic épidémique.',
     'doctors.info.point1.link': 'https://professionnels.vaccination-info.be/vaccination-contre-la-grippe-saisonniere-saison-2025-2026/',
-    'doctors.info.point2': 'Le Dr Maité Moulart est actuellement en congé maternité, son retour est prévu pour début mai 2026.',
+    'doctors.info.point2': 'La Dr Maité Moulart est actuellement en congé maternité, son retour est prévu pour début mai 2026.',
     'doctors.info.point3': 'La Dr Alina Bousmar partira en congé maternité à partir du 28 janvier 2026 jusqu\'au 11 mai 2026.',
     
     // Services
