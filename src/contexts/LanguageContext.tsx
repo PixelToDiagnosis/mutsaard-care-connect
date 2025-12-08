@@ -50,6 +50,10 @@ const translations = {
     'doctors.floor.ground': 'Gelijkvloers',
     'doctors.floor.second': 'Tweede verdieping',
     'doctors.nonConventioned': 'Niet geconventioneerd',
+    'doctors.info.title': 'Belangrijke informatie',
+    'doctors.info.point1': 'Alle artsen van het kabinet zijn niet-geconventioneerd.',
+    'doctors.info.point2': 'De honoraria worden aan het einde van elke consultatie betaald.',
+    'doctors.info.point3': 'Wij aanvaarden betalingen per Bancontact of contant.',
     
     // Services
     'services.title': 'Onze diensten',
@@ -157,6 +161,10 @@ const translations = {
     'doctors.floor.ground': 'Rez-de-chaussée',
     'doctors.floor.second': 'Deuxième étage',
     'doctors.nonConventioned': 'Non conventionné',
+    'doctors.info.title': 'Informations importantes',
+    'doctors.info.point1': 'Tous les médecins du cabinet sont non conventionnés.',
+    'doctors.info.point2': 'Les honoraires sont réglés à la fin de chaque consultation.',
+    'doctors.info.point3': 'Nous acceptons les paiements par Bancontact ou en espèces.',
     
     // Services
     'services.title': 'Nos services',
@@ -264,6 +272,10 @@ const translations = {
     'doctors.floor.ground': 'Ground floor',
     'doctors.floor.second': 'Second floor',
     'doctors.nonConventioned': 'Non-conventioned',
+    'doctors.info.title': 'Important information',
+    'doctors.info.point1': 'All doctors at the practice are non-conventioned.',
+    'doctors.info.point2': 'Fees are settled at the end of each consultation.',
+    'doctors.info.point3': 'We accept payments by Bancontact or cash.',
     
     // Services
     'services.title': 'Our Services',
