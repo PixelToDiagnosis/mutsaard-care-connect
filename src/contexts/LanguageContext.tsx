@@ -90,7 +90,7 @@ const translations = {
     'aesthetic.faq.results.answer': 'Botuline toxine: 5-14 dagen; Fillers: onmiddellijk; Collageenstimulatie: geleidelijk over weken tot maanden.',
     'aesthetic.faq.price': 'Wat zijn de prijzen?',
     'aesthetic.faq.price.answer': 'Tijdens de eerste consultatie zullen we samen een gepersonaliseerd behandelplan opstellen en u ontvangt een prijsofferte. De eerste consultatie bedraagt €50 en wordt in mindering gebracht op elke daaropvolgende behandeling. Indicatieve prijzen: Botuline toxine ≈ €100-150 per zone, Fillers vanaf ≈ €300-350 per ml, Collageenstimulatie op aanvraag.',
-    'aesthetic.slogan': 'Verzorgen, luisteren, de natuurlijke schoonheid van iedereen onthullen: een holistische benadering van welzijn, tussen gezondheid en esthetiek.',
+    'aesthetic.slogan': 'Uw natuurlijke frisheid behouden, met precisie en elegantie.',
     'aesthetic.office.address': 'Kabinetadres: 2 Avenue du Forum, 1020 Laeken',
     'aesthetic.treatments.title': 'Voorgestelde behandelingen',
     
@@ -202,7 +202,7 @@ const translations = {
     'aesthetic.faq.results.answer': 'Toxine botulique : 5-14 jours ; Produits de comblement : immédiat ; Inducteurs de collagène : progressif sur plusieurs semaines à mois.',
     'aesthetic.faq.price': 'Quels sont les prix ?',
     'aesthetic.faq.price.answer': 'Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. La première consultation coûte 50€ et sera déduite de tout traitement ultérieur. Prix indicatifs : Toxine botulique ≈ 100-150€ par zone, Produits de comblement à partir de ≈ 300-350€ par ml, Inducteurs de collagène sur demande.',
-    'aesthetic.slogan': 'Soigner, écouter, révéler la beauté naturelle de chacun : une approche globale du bien-être, entre santé et esthétique.',
+    'aesthetic.slogan': 'Préserver votre fraîcheur naturelle, avec précision et élégance.',
     'aesthetic.office.address': 'Adresse du cabinet : 2 Avenue du Forum, 1020 Laeken',
     'aesthetic.treatments.title': 'Traitements proposés',
     
@@ -314,7 +314,7 @@ const translations = {
     'aesthetic.faq.results.answer': 'Botulinum toxin: 5-14 days; Fillers: immediate; Collagen inducers: gradual over weeks to months.',
     'aesthetic.faq.price': 'What are the prices?',
     'aesthetic.faq.price.answer': 'During the first consultation we will establish a personalised treatment plan together and you will receive a price quote. The first consultation is €50 and will be deducted from any subsequent treatment. Indicative prices: Botulinum toxin ≈ €100-150 per area, Fillers from ≈ €300-350 per ml, Collagen inducers on request.',
-    'aesthetic.slogan': 'Caring, listening, revealing the natural beauty of each person: a holistic approach to well-being, between health and aesthetics.',
+    'aesthetic.slogan': 'Preserve your natural freshness, with precision and elegance.',
     'aesthetic.office.address': 'Practice address: 2 Avenue du Forum, 1020 Laeken',
     'aesthetic.treatments.title': 'Proposed treatments',
     
