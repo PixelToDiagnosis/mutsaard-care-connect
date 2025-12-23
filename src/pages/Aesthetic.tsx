@@ -65,7 +65,7 @@ const Aesthetic = () => {
               <h2 className="text-2xl font-semibold text-foreground/90">
                 {t('aesthetic.welcome')}
               </h2>
-              <p className="text-base text-foreground/70 italic">
+              <p className="text-2xl md:text-3xl text-foreground/80 italic font-light leading-relaxed">
                 {t('aesthetic.slogan')}
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed whitespace-pre-line">
