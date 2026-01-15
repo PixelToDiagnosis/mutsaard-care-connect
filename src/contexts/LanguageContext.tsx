@@ -89,7 +89,7 @@ const translations = {
     'aesthetic.faq.results': 'Wanneer zie ik resultaten?',
     'aesthetic.faq.results.answer': 'Botuline toxine: 5-14 dagen; Fillers: onmiddellijk; Collageenstimulatie: geleidelijk over weken tot maanden.',
     'aesthetic.faq.price': 'Wat zijn de prijzen?',
-    'aesthetic.faq.price.answer': 'Tijdens de eerste consultatie zullen we samen een gepersonaliseerd behandelplan opstellen en u ontvangt een prijsofferte. De eerste consultatie is volledig informatief en gratis. Indicatieve prijzen: Botuline toxine ≈ €100-150 per zone, Fillers vanaf ≈ €300-350 per ml, Collageenstimulatie op aanvraag.',
+    'aesthetic.faq.price.answer': 'Tijdens de eerste consultatie zullen we samen een gepersonaliseerd behandelplan opstellen en u ontvangt een prijsofferte. De eerste consultatie is volledig informatief en vrijblijvend. Indicatieve prijzen: Botuline toxine ≈ €100-150 per zone, Fillers vanaf ≈ €300-350 per ml, Collageenstimulatie op aanvraag.',
     'aesthetic.slogan': 'Uw natuurlijke frisheid behouden, met precisie en elegantie.',
     'aesthetic.office.address': 'Kabinetadres: 2 Avenue du Forum, 1020 Laeken',
     'aesthetic.treatments.title': 'Voorgestelde behandelingen',
