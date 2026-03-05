@@ -121,20 +121,6 @@ const Home = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span>
-                      {t('doctors.info.point1')}{' '}
-                      <a 
-                        href={t('doctors.info.point1.link')} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-primary underline hover:text-primary/80"
-                      >
-                        En savoir plus →
-                      </a>
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
                     <span>{t('doctors.info.point2')}</span>
                   </li>
                   <li className="flex items-start gap-2">
