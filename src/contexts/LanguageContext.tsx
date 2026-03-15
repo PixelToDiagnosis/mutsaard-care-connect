@@ -271,7 +271,7 @@ const translations = {
     'doctors.floor.second': 'Second floor',
     'doctors.nonConventioned': 'Non-conventioned',
     'doctors.info.title': 'Important information',
-    'doctors.info.point2': 'Dr. Maité Moulart is currently on maternity leave, her return is expected in early June 2026.',
+    'doctors.info.point2': 'Dr. Maité Moulart is currently on maternity leave, her return is expected in July 2026.',
     'doctors.info.point3': 'Dr. Alina Bousmar will be on maternity leave from January 28, 2026 until late May 2026.',
     
     // Services
