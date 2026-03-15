@@ -161,7 +161,7 @@ const translations = {
     'doctors.floor.second': 'Deuxième étage',
     'doctors.nonConventioned': 'Non conventionné',
     'doctors.info.title': 'Informations importantes',
-    'doctors.info.point2': 'La Dr Maité Moulart est actuellement en congé maternité, son retour est prévu pour début juin 2026.',
+    'doctors.info.point2': 'La Dr Maité Moulart est actuellement en congé maternité, son retour est prévu pour juillet 2026.',
     'doctors.info.point3': 'La Dr Alina Bousmar partira en congé maternité à partir du 28 janvier 2026 jusqu\'à fin mai 2026.',
     
     // Services
