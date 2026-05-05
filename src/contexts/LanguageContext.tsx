@@ -52,7 +52,7 @@ const translations = {
     'doctors.nonConventioned': 'Niet geconventioneerd',
     'doctors.info.title': 'Belangrijke informatie',
     'doctors.info.point2': 'Dr. Maité Moulart is momenteel met zwangerschapsverlof, haar terugkeer is gepland voor juli 2026.',
-    'doctors.info.point3': 'Dr. Alina Bousmar gaat met zwangerschapsverlof vanaf 28 januari 2026 tot eind mei 2026.',
+    'doctors.info.point3': 'Het kabinet is gesloten op donderdag 14 mei, en Dr. Alina Bousmar zal de enige arts zijn die consulteert op vrijdag 15 mei 2026.',
     
     // Services
     'services.title': 'Onze diensten',
@@ -162,7 +162,7 @@ const translations = {
     'doctors.nonConventioned': 'Non conventionné',
     'doctors.info.title': 'Informations importantes',
     'doctors.info.point2': 'La Dr Maité Moulart est actuellement en congé maternité, son retour est prévu pour juillet 2026.',
-    'doctors.info.point3': 'La Dr Alina Bousmar partira en congé maternité à partir du 28 janvier 2026 jusqu\'à fin mai 2026.',
+    'doctors.info.point3': 'Le cabinet sera fermé le jeudi 14 mai, et la Dr Alina Bousmar sera la seule médecin qui consultera le vendredi 15 mai 2026.',
     
     // Services
     'services.title': 'Nos services',
@@ -272,7 +272,7 @@ const translations = {
     'doctors.nonConventioned': 'Non-conventioned',
     'doctors.info.title': 'Important information',
     'doctors.info.point2': 'Dr. Maité Moulart is currently on maternity leave, her return is expected in July 2026.',
-    'doctors.info.point3': 'Dr. Alina Bousmar will be on maternity leave from January 28, 2026 until late May 2026.',
+    'doctors.info.point3': 'The practice will be closed on Thursday May 14, and Dr. Alina Bousmar will be the only doctor available for consultations on Friday May 15, 2026.',
     
     // Services
     'services.title': 'Our Services',
