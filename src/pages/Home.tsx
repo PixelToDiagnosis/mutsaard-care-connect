@@ -123,10 +123,6 @@ const Home = () => {
                     <span className="text-primary font-bold">•</span>
                     <span>{t('doctors.info.point2')}</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span>{t('doctors.info.point3')}</span>
-                  </li>
                 </ul>
               </CardContent>
             </Card>
