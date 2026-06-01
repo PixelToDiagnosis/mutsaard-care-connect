@@ -17,7 +17,7 @@ const Appointments = () => {
       name: 'Dr Louise Guesny',
       location: '59 Avenue Mutsaard - Ground Floor',
       phone: '+32 2 268 40 40',
-      medispring: null,
+      medispring: 'https://agenda.medispring.be/ms-kaisin-ph-d21c9f4c-191d-4e33-a2c9-81dbe292bf12/3311d74b-3329-4559-9464-f5a9a28a1401',
     },
     {
       name: 'Dr Alina Bousmar',
