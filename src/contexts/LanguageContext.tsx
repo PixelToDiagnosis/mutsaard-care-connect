@@ -51,7 +51,7 @@ const translations = {
     'doctors.floor.second': 'Tweede verdieping',
     'doctors.nonConventioned': 'Niet geconventioneerd',
     'doctors.info.title': 'Belangrijke informatie',
-    'doctors.info.point2': 'Dr. Maité Moulart is momenteel met zwangerschapsverlof, haar terugkeer is gepland voor juli 2026.',
+    
     
     // Services
     'services.title': 'Onze diensten',
@@ -160,7 +160,7 @@ const translations = {
     'doctors.floor.second': 'Deuxième étage',
     'doctors.nonConventioned': 'Non conventionné',
     'doctors.info.title': 'Informations importantes',
-    'doctors.info.point2': 'La Dr Maité Moulart est actuellement en congé maternité, son retour est prévu pour juillet 2026.',
+    
     
     // Services
     'services.title': 'Nos services',
@@ -269,7 +269,7 @@ const translations = {
     'doctors.floor.second': 'Second floor',
     'doctors.nonConventioned': 'Non-conventioned',
     'doctors.info.title': 'Important information',
-    'doctors.info.point2': 'Dr. Maité Moulart is currently on maternity leave, her return is expected in July 2026.',
+    
     
     // Services
     'services.title': 'Our Services',
