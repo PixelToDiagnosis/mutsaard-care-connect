@@ -51,6 +51,8 @@ const translations = {
     'doctors.floor.second': 'Tweede verdieping',
     'doctors.nonConventioned': 'Niet geconventioneerd',
     'doctors.info.title': 'Belangrijke informatie',
+    'doctors.info.point1': 'Dr. Kaisin zal afwezig zijn van 13 juli tot 2 augustus 2026.',
+    'doctors.info.point2': 'Dr. Graide zal afwezig zijn van 6 augustus tot 30 augustus 2026.',
     
     // Services
     'services.title': 'Onze diensten',
@@ -159,6 +161,8 @@ const translations = {
     'doctors.floor.second': 'Deuxième étage',
     'doctors.nonConventioned': 'Non conventionné',
     'doctors.info.title': 'Informations importantes',
+    'doctors.info.point1': 'Le Dr Kaisin sera absent du 13 juillet au 2 août 2026.',
+    'doctors.info.point2': 'Le Dr Graide sera absent du 6 août au 30 août 2026.',
     
     // Services
     'services.title': 'Nos services',
@@ -267,6 +271,8 @@ const translations = {
     'doctors.floor.second': 'Second floor',
     'doctors.nonConventioned': 'Non-conventioned',
     'doctors.info.title': 'Important information',
+    'doctors.info.point1': 'Dr. Kaisin will be absent from July 13 to August 2, 2026.',
+    'doctors.info.point2': 'Dr. Graide will be absent from August 6 to August 30, 2026.',
     
     // Services
     'services.title': 'Our Services',
