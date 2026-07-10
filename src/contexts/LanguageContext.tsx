@@ -269,7 +269,7 @@ const translations = {
     'doctors.floor.second': 'Second floor',
     'doctors.nonConventioned': 'Non-conventioned',
     'doctors.info.title': 'Important information',
-    'doctors.info.point2': 'Dr. Maité Moulart is currently on maternity leave, her return is expected in July 2026.',
+    
     
     // Services
     'services.title': 'Our Services',
