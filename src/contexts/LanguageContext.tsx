@@ -160,7 +160,7 @@ const translations = {
     'doctors.floor.second': 'Deuxième étage',
     'doctors.nonConventioned': 'Non conventionné',
     'doctors.info.title': 'Informations importantes',
-    'doctors.info.point2': 'La Dr Maité Moulart est actuellement en congé maternité, son retour est prévu pour juillet 2026.',
+    
     
     // Services
     'services.title': 'Nos services',
