@@ -51,7 +51,7 @@ const translations = {
     'doctors.floor.second': 'Tweede verdieping',
     'doctors.nonConventioned': 'Niet geconventioneerd',
     'doctors.info.title': 'Belangrijke informatie',
-    'doctors.info.point2': 'Dr. Maité Moulart is momenteel met zwangerschapsverlof, haar terugkeer is gepland voor juli 2026.',
+    
     
     // Services
     'services.title': 'Onze diensten',
