@@ -106,6 +106,33 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Important Information */}
+      <section className="py-8 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <Card className="border-none shadow-md bg-medical-warm">
+              <CardHeader className="pb-2">
+                <CardTitle className="flex items-center gap-2 text-xl">
+                  <Info className="h-5 w-5 text-primary" />
+                  {t('doctors.info.title')}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="h-2 w-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>{t('doctors.info.point1')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="h-2 w-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>{t('doctors.info.point2')}</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
       {/* Services Section */}
       <section className="py-20 bg-background">
