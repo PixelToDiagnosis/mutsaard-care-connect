@@ -52,7 +52,6 @@ const translations = {
     'doctors.nonConventioned': 'Niet geconventioneerd',
     'doctors.info.title': 'Belangrijke informatie',
     
-    
     // Services
     'services.title': 'Onze diensten',
     'services.intro': 'Wij bieden een breed scala aan medische diensten voor uw hele gezin.',
@@ -161,7 +160,6 @@ const translations = {
     'doctors.nonConventioned': 'Non conventionné',
     'doctors.info.title': 'Informations importantes',
     
-    
     // Services
     'services.title': 'Nos services',
     'services.intro': 'Nous offrons une large gamme de services médicaux pour toute votre famille.',
@@ -269,7 +267,6 @@ const translations = {
     'doctors.floor.second': 'Second floor',
     'doctors.nonConventioned': 'Non-conventioned',
     'doctors.info.title': 'Important information',
-    
     
     // Services
     'services.title': 'Our Services',
