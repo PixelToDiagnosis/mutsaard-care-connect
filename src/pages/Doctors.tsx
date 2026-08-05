@@ -25,6 +25,7 @@ const Doctors = () => {
     {
       name: 'Dr Maité Moulart',
       role: t('doctors.gp'),
+      specialty: t('doctors.moulart.specialty'),
       location: `59 Avenue Mutsaard - ${t('doctors.floor.second')}`,
     },
     {
