@@ -29,7 +29,7 @@ const Appointments = () => {
       name: 'Dr Maité Moulart',
       location: '59 Avenue Mutsaard - Second Floor',
       phone: '+32 2 268 40 40',
-      medispring: null,
+      medispring: 'https://agenda.medispring.be/ms-kaisin-ph-d21c9f4c-191d-4e33-a2c9-81dbe292bf12/db492cd2-d3c8-4cb6-892c-d2d3c84cb614',
     },
     {
       name: 'Dr Marie-Eve Bousmar',
