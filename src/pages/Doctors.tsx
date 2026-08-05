@@ -25,6 +25,7 @@ const Doctors = () => {
     {
       name: 'Dr Maité Moulart',
       role: t('doctors.gp'),
+      specialty: t('doctors.moulart.specialty'),
       location: `59 Avenue Mutsaard - ${t('doctors.floor.second')}`,
     },
     {
@@ -64,6 +65,9 @@ const Doctors = () => {
                   </div>
                   <CardTitle className="text-xl">{doctor.name}</CardTitle>
                   <CardDescription className="text-base">{doctor.role}</CardDescription>
+                  {doctor.specialty && (
+                    <p className="text-sm text-primary font-medium mt-1">{doctor.specialty}</p>
+                  )}
                   <p className="text-sm text-muted-foreground italic mt-1">{t('doctors.nonConventioned')}</p>
                 </CardHeader>
                 <CardContent className="space-y-3">
