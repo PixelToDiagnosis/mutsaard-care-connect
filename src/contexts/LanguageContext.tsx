@@ -52,8 +52,8 @@ const translations = {
     'doctors.nonConventioned': 'Niet geconventioneerd',
     'doctors.moulart.specialty': 'Sportgeneeskunde + erkend door Defensie',
     'doctors.info.title': 'Belangrijke informatie',
-    'doctors.info.point1': 'Dr. Kaisin zal afwezig zijn van 13 juli tot 2 augustus 2026.',
-    'doctors.info.point2': 'Dr. Graide zal afwezig zijn van 6 augustus tot 30 augustus 2026.',
+    'doctors.info.point1': 'De vaccinatiecampagne tegen seizoensgriep en COVID-19 voor de herfst 2026 moet starten half oktober 2026 (meestal rond 13 of 14 oktober).',
+    'doctors.info.point2': 'Vraag info aan uw arts of apotheker.',
     
     // Services
     'services.title': 'Onze diensten',
@@ -163,8 +163,8 @@ const translations = {
     'doctors.nonConventioned': 'Non conventionné',
     'doctors.moulart.specialty': 'Médecine du sport + agréée par la Défense',
     'doctors.info.title': 'Informations importantes',
-    'doctors.info.point1': 'Le Dr Kaisin sera absent du 13 juillet au 2 août 2026.',
-    'doctors.info.point2': 'Le Dr Graide sera absent du 6 août au 30 août 2026.',
+    'doctors.info.point1': 'La campagne de vaccination contre la grippe saisonnière et le COVID-19 pour l\'automne 2026 doit débuter à la mi-octobre 2026 (généralement autour du 13 ou 14 octobre).',
+    'doctors.info.point2': 'Demandez info à votre médecin ou pharmacien.',
     
     // Services
     'services.title': 'Nos services',
@@ -274,8 +274,8 @@ const translations = {
     'doctors.nonConventioned': 'Non-conventioned',
     'doctors.moulart.specialty': 'Sports medicine + approved by Defense',
     'doctors.info.title': 'Important information',
-    'doctors.info.point1': 'Dr. Kaisin will be absent from July 13 to August 2, 2026.',
-    'doctors.info.point2': 'Dr. Graide will be absent from August 6 to August 30, 2026.',
+    'doctors.info.point1': 'The seasonal flu and COVID-19 vaccination campaign for autumn 2026 is due to start in mid-October 2026 (usually around October 13 or 14).',
+    'doctors.info.point2': 'Ask your doctor or pharmacist for more information.',
     
     // Services
     'services.title': 'Our Services',
