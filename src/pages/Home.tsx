@@ -125,6 +125,10 @@ const Home = () => {
                     <span className="h-2 w-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                     <span>{t('doctors.info.point1')}</span>
                   </li>
+                  <li className="flex items-start gap-2 text-foreground/90">
+                    <span className="h-2 w-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>{t('doctors.info.point2')}</span>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
